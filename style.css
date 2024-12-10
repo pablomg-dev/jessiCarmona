@@ -1,0 +1,22 @@
+.div-principal {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    font-family: "Simonetta", serif;
+}
+
+#menu-button {
+    border-color: #7BD3EA;
+}
+
+.menu-items:hover {
+    color: #7BD3EA;
+}
+
+main {
+    background-color: #FFDDAE;
+}
+
+footer {
+    background-color: #C6E7FF;
+}

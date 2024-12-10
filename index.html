@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo -->
+    <title>Soy Jessi Carmona</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./media/favicon.ico" type="image/x-icon">
+    <!-- Links estilos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alice&family=Arimo:ital,wght@0,400..700;1,400..700&family=Simonetta&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="div-principal text-black">
+
+        <header>
+
+            <nav class="relative">
+                <!-- Contenedor principal con flex -->
+                <div class="flex items-center justify-between p-2">
+                    <!-- Logo o imagen a la izquierda -->
+                    <a href="#" class="flex items-center">
+                        <img src="./media/creandoLogo.png" alt="logo" class="h-20 w-auto">
+                    </a>
+
+                    <!-- Texto entre medio -->
+                     <h1>
+                        Espacio - Creando Armonía
+                     </h1>
+            
+                    <!-- Botón del menú hamburguesa -->
+                    <button id="menu-button"
+                        class="md:hidden p-2 border-2 rounded cursor-pointer focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            
+                <!-- Menú -->
+                <div
+                    id="menu"
+                    class="absolute top-full right-0 w-full md:static md:flex md:flex-row md:items-center md:justify-end bg-white overflow-hidden transition-all duration-300 ease-in-out transform origin-top scale-y-0 md:scale-y-100">
+                    <a href="#" class="block text-2xl font-bold text-center p-2 menu-items">Inicio</a>
+                    <a href="#" class="block text-2xl font-bold text-center p-2 menu-items">Conoceme</a>
+                    <a href="#" class="block text-2xl font-bold text-center p-2 menu-items">Terapias</a>
+                    <a href="#" class="block text-2xl font-bold text-center p-2 menu-items">Contacto</a>
+                </div>
+            </nav>
+
+        </header>
+
+        <main>
+            <img src="./media/jessi1.jpeg" alt="jessi carmona foto">
+        </main>
+
+        <footer>
+            Pie de pagina
+        </footer>
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
