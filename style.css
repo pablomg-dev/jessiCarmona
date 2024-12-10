@@ -37,6 +37,11 @@
     background-color: #fff; /* Fondo sólido del menú */
 }
 
+#btn-home {
+    background-color: #FBFBFB;
+    color: black;
+}
+
 main {
     background-color: #FFDDAE;
 }

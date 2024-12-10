@@ -26,3 +26,9 @@ menuOverlay.addEventListener('click', () => {
     menu.classList.remove('scale-y-100');
     menuOverlay.classList.remove('active'); // Ocultar overlay
 });
+
+// Animacion texto home
+document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('main > .absolute > *');
+    elements.forEach(el => el.classList.remove('opacity-0'));
+});

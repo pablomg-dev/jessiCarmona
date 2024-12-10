@@ -57,24 +57,34 @@
                     </div>
                 </div>
 
-
             </nav>
 
         </header>
 
-        <main class="relative bg-[url('./media/jessi1.jpeg')] bg-cover bg-center h-screen">
+        <main class="relative bg-cover bg-center h-screen" style="background-image: url('./media/jessi1.jpeg');">
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/50"></div>
+
             <!-- Contenedor del texto y botón -->
-            <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/10">
-                <h1 class="text-4xl md:text-6xl font-bold mb-4 text-center">Bienvenidos a mi espacio</h1>
-                <p class="text-xl md:text-2xl mb-6 text-center max-w-md">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+                <h1
+                    class="text-4xl md:text-6xl font-bold mb-4 text-center transition-opacity duration-[3000ms] opacity-0">
+                    Bienvenidos a mi espacio
+                </h1>
+                <p
+                    class="text-xl md:text-2xl mb-6 text-center max-w-md transition-opacity duration-[3000ms] opacity-0 delay-[500ms]">
                     Descubre las mejores terapias personalizadas para tu bienestar.
                 </p>
                 <button
-                    class="btn-home px-6 py-3 bg-blue-600 hover:bg-blue-800 text-white rounded-lg font-semibold text-lg">
+                    class="px-6 py-3 rounded-lg font-semibold text-lg transition-opacity duration-[3000ms] opacity-0 delay-[1000ms]" id="btn-home">
                     Conoce más
                 </button>
             </div>
         </main>
+
+        <script>
+            
+        </script>
 
         <footer>
             Pie de pagina
