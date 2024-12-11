@@ -29,10 +29,10 @@
 #menu-overlay {
     display: none;
     position: fixed;
-    top: 8rem; /* Ajusta este valor según la altura de tu encabezado */
+    top: 9rem; /* Ajusta este valor según la altura de tu encabezado */
     left: 0;
     width: 100%;
-    height: calc(100% - 8rem); /* Resta la altura del encabezado */
+    height: calc(100% - 9rem); /* Resta la altura del encabezado */
     background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido */
     z-index: 10; /* Asegura que esté debajo del menú */
 }
