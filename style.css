@@ -5,12 +5,17 @@
     font-family: "Simonetta", serif;
 }
 
+#menu {
+    z-index: 20;
+    background-color: #FFF;
+}
+
 #menu-button {
-    border-color: #7BD3EA;
+    border-color: #2FAED5;
 }
 
 .menu-items:hover{
-    color: #7BD3EA;
+    color: #2FAED5;
 }
 
 #menu-overlay {
@@ -24,24 +29,40 @@
 #menu-overlay {
     display: none;
     position: fixed;
-    top: 7rem; /* Ajusta este valor según la altura de tu encabezado */
+    top: 8rem; /* Ajusta este valor según la altura de tu encabezado */
     left: 0;
     width: 100%;
-    height: calc(100% - 7rem); /* Resta la altura del encabezado */
+    height: calc(100% - 8rem); /* Resta la altura del encabezado */
     background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido */
     z-index: 10; /* Asegura que esté debajo del menú */
 }
 
-#menu {
-    z-index: 20; /* El menú sigue por encima del overlay */
-    background-color: #fff; /* Fondo sólido del menú */
+/* Estilo inicial de las barras */
+.hamburger-bar {
+    width: 30px;
+    height: 4px;
+    background-color: #2FAED5;
+    margin: 5px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+/* Transformaciones para la "X" */
+#menu-button.open .top {
+    transform: translateY(9px) rotate(45deg);
+}
+
+/* Ocultar la barra del medio */
+#menu-button.open .middle {
+    opacity: 0; 
+}
+
+#menu-button.open .bottom {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+
 #btn-home {
-    background-color: #FBFBFB;
+    background-color: #FEEDAA;
     color: black;
 }
 
-footer {
-    background-color: #C6E7FF;
-}

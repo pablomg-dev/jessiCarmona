@@ -31,28 +31,25 @@
                 <div class="flex items-center justify-between p-3" id="menu-titulo">
                     <!-- Logo o imagen a la izquierda -->
                     <a href="#" class="flex items-center">
-                        <img src="./media/creandoLogo.png" alt="logo" class="h-20 w-auto">
+                        <img src="./media/creandoLogo.png" alt="logo" class="h-24 w-auto">
                     </a>
 
                     <!-- Botón del menú hamburguesa -->
                     <button id="menu-button" class="md:hidden p-2 border-2 rounded cursor-pointer focus:outline-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16m-7 6h7" />
-                        </svg>
+                        <div class="hamburger-bar top"></div>
+                        <div class="hamburger-bar middle"></div>
+                        <div class="hamburger-bar bottom"></div>
                     </button>
 
                     <!-- Overlay -->
-                    <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-10">
-                    </div>
+                    <div id="menu-overlay"></div>
 
                     <!-- Menú -->
                     <div id="menu"
                         class="absolute top-full right-0 w-full md:static md:flex md:flex-row md:items-center md:justify-end bg-white overflow-hidden transition-all duration-300 ease-in-out transform origin-top scale-y-0 md:scale-y-100">
                         <a href="#" class="block text-xl font-bold text-center p-2 menu-items">Inicio</a>
+                        <a href="#" class="block text-xl font-bold text-center p-2 menu-items">Consultoría 1:1</a>
                         <a href="#" class="block text-xl font-bold text-center p-2 menu-items">Conoceme</a>
-                        <a href="#" class="block text-xl font-bold text-center p-2 menu-items">Terapias</a>
                         <a href="#" class="block text-xl font-bold text-center p-2 menu-items">Contacto</a>
                     </div>
                 </div>
@@ -62,6 +59,7 @@
         </header>
 
         <main class="relative bg-cover bg-center h-screen" style="background-image: url('./media/jessi1.jpeg');">
+
             <!-- Overlay -->
             <div class="absolute inset-0 bg-black/50"></div>
 
@@ -76,14 +74,15 @@
                     Descubre las mejores terapias personalizadas para tu bienestar.
                 </p>
                 <button
-                    class="px-6 py-3 rounded-lg font-semibold text-lg transition-opacity duration-[2000ms] opacity-0 delay-[1000ms]" id="btn-home">
+                    class="px-6 py-3 rounded-lg font-semibold text-lg transition-opacity duration-[2000ms] opacity-0 delay-[1000ms]"
+                    id="btn-home">
                     Conoce más
                 </button>
             </div>
         </main>
 
         <script>
-            
+
         </script>
 
         <footer>
