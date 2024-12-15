@@ -60,9 +60,17 @@
     transform: translateY(-9px) rotate(-45deg);
 }
 
+/* Footer */
+footer {
+    background-color: #FEEDAA;
+}
 
 #btn-home {
     background-color: #FEEDAA;
     color: black;
 }
 
+#titulo-conoceme {
+    font-family: "Arimo", sans-serif;
+    color: #CB6CE6;
+}
