@@ -21,25 +21,6 @@ header, #main-inicio {
     color: #2FAED5;
 }
 
-#menu-overlay {
-    display: none;
-}
-
-#menu-overlay.active {
-    display: block;
-}
-
-#menu-overlay {
-    display: none;
-    position: fixed;
-    top: 9rem; /* Ajusta este valor según la altura de tu encabezado */
-    left: 0;
-    width: 100%;
-    height: calc(100% - 9rem); /* Resta la altura del encabezado */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido */
-    z-index: 10; /* Asegura que esté debajo del menú */
-}
-
 /* Estilo inicial de las barras */
 .hamburger-bar {
     width: 30px;
@@ -65,7 +46,7 @@ header, #main-inicio {
 
 /* Footer */
 footer {
-    background-color: #FEEDAA;
+    background-color: #2FAED5;
     font-family: "Simonetta", serif;
 }
 
