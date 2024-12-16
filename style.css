@@ -2,6 +2,9 @@
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
+}
+
+header, #main-inicio {
     font-family: "Simonetta", serif;
 }
 
@@ -63,6 +66,7 @@
 /* Footer */
 footer {
     background-color: #FEEDAA;
+    font-family: "Simonetta", serif;
 }
 
 #btn-home {
@@ -70,11 +74,14 @@ footer {
     color: black;
 }
 
-#titulo-conoceme {
+/* Conoceme */
+
+#main-conoceme {
     font-family: "Arimo", sans-serif;
+}
+
+#titulo-conoceme {
+    font-family: "Simonetta", serif;
     color: #CB6CE6;
 }
 
-#texto-conoceme {
-    font-family: "Arimo", sans-serif;
-}
