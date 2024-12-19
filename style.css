@@ -46,7 +46,7 @@ header, #main-inicio {
 
 /* Footer */
 footer {
-    background-color: #2FAED5;
+    background-color: #D9D9D9;
     font-family: "Simonetta", serif;
 }
 
@@ -63,6 +63,7 @@ footer {
 
 #titulo-conoceme {
     font-family: "Simonetta", serif;
-    color: #CECECE;
+    color: #495551;
+    background-color: #FEEDAA;
 }
 
