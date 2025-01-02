@@ -14,8 +14,13 @@ function toggleMenu() {
 
 menuButton.addEventListener('click', toggleMenu);
 
-// Animacion texto home
+// Animacion main home
 document.addEventListener('DOMContentLoaded', () => {
-    const elements = document.querySelectorAll('main > .absolute > *');
-    elements.forEach(el => el.classList.remove('opacity-0'));
+    const elements = document.querySelectorAll('main *');
+    elements.forEach((el, index) => {
+        setTimeout(() => {
+            el.classList.add('opacity-100');
+            el.classList.remove('opacity-0');
+        }, index * 200); // Incrementa el retraso en 200ms por cada elemento
+    });
 });

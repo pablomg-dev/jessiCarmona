@@ -50,7 +50,7 @@ footer {
     font-family: "Simonetta", serif;
 }
 
-#btn-home {
+.btn-home {
     background-color: #FEEDAA;
     color: black;
 }
