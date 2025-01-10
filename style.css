@@ -61,7 +61,7 @@ footer {
     font-family: "Arimo", sans-serif;
 }
 
-#titulo-conoceme {
+#titulo-conoceme, #titulo-parrafo-home {
     font-family: "Simonetta", serif;
     color: #495551;
     background-color: #FEEDAA;
