@@ -57,13 +57,21 @@ footer {
 
 /* Conoceme */
 
-#main-conoceme, #main-home-texto {
+#main-conoceme, #main-home-texto, #main-consultoria {
     font-family: "Arimo", sans-serif;
 }
 
-#titulo-conoceme, #titulo-parrafo-home {
+#titulo-parrafo-home {
+    font-family: "Simonetta", serif;
+    color: #495551;
+}
+
+#titulo-conoceme, #titulo-contactame, #titulo-consultoria {
     font-family: "Simonetta", serif;
     color: #495551;
     background-color: #FEEDAA;
 }
 
+hr {
+    border: 1px solid black;
+}
