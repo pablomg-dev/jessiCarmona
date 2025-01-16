@@ -72,6 +72,19 @@ footer {
     background-color: #FEEDAA;
 }
 
+#subtitulo-consultoria {
+    font-family: "Simonetta", serif;
+}
+
 hr {
     border: 1px solid black;
 }
+
+.carousel-item img {
+    transition: none !important;
+  }
+
+.titulo-slider-home {
+    background-color: #FEEDAA;
+    font-size: 1.5rem;
+}  
