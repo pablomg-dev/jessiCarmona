@@ -46,8 +46,9 @@ header {
 
 /* Footer */
 footer {
-    background-color: #2FAED5;
+    background-color: #FFF;
     font-family: "Simonetta", serif;
+    color: #495551;
 }
 
 .btn-home {
@@ -57,11 +58,10 @@ footer {
 
 footer p a {
     text-decoration: none;
-    color: black;
 }
 
 footer p a:hover {
-    color: #495551;
+    color: black;
 }
 
 /* Titulos y subtitulos */
@@ -121,6 +121,10 @@ hr {
     height: auto;
 }
 
+.seccion-titulo {
+    font-family: "Simonetta", serif;;
+}
+
 .carousel-item .container {
     width: 100%;
     height: 100%;
@@ -146,6 +150,7 @@ hr {
 .testimonio-info {
     font-weight: bold;
     text-align: center;
+    color: #CB6CE6;
 }
 
 .testimonio-info p {
