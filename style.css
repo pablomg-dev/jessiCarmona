@@ -55,13 +55,13 @@ footer {
     color: black;
 }
 
-/* Conoceme */
+/* Titulos y subtitulos */
 
 #main-conoceme, #main-home-texto, #main-consultoria {
     font-family: "Arimo", sans-serif;
 }
 
-#titulo-conoceme, #titulo-contactame, #titulo-consultoria, #titulo-parrafo-home {
+#titulo-conoceme, #titulo-contactame, #titulo-consultoria, #titulo-parrafo-home, #titulo-servicios {
     font-family: "Simonetta", serif;
     color: #495551;
     background-color: #FEEDAA;
@@ -126,6 +126,7 @@ hr {
     max-width: 70%;
     font-size: 20px;
     text-align: center;
+    font-size: 1rem;
 }
 
 .testimonio-info {
@@ -135,13 +136,5 @@ hr {
 
 .testimonio-info p {
     margin-bottom: 0;
-}
-
-.testimonio-footer .cliente {
     font-size: 1.2rem;
-}
-
-.testimonio-info .cargo {
-    font-size: 0.9rem;
-    color: #495551;
 }
