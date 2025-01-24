@@ -4,7 +4,7 @@
     grid-template-rows: auto 1fr auto;
 }
 
-header, #main-inicio {
+header {
     font-family: "Simonetta", serif;
 }
 
@@ -46,7 +46,7 @@ header, #main-inicio {
 
 /* Footer */
 footer {
-    background-color: #D9D9D9;
+    background-color: #2FAED5;
     font-family: "Simonetta", serif;
 }
 
@@ -55,10 +55,23 @@ footer {
     color: black;
 }
 
+footer p a {
+    text-decoration: none;
+    color: black;
+}
+
+footer p a:hover {
+    color: #495551;
+}
+
 /* Titulos y subtitulos */
 
 #main-conoceme, #main-home-texto, #main-consultoria {
     font-family: "Arimo", sans-serif;
+}
+
+.titulos-home {
+    font-family: "Simonetta", serif;
 }
 
 #titulo-conoceme, #titulo-contactame, #titulo-consultoria, #titulo-parrafo-home, #titulo-servicios {
@@ -73,6 +86,12 @@ footer {
 
 hr {
     border: 1px solid black;
+}
+
+.titulo-slider-home {
+    background-color: #FEEDAA;
+    font-family: "Simonetta", serif;
+    font-weight: bold;
 }
 
 /* Carrousel imagenes */
@@ -91,11 +110,6 @@ hr {
 
 .carousel-item img {
     transition: none !important;
-  }
-
-.titulo-slider-home {
-    background-color: #FEEDAA;
-    font-size: 1.5rem;
 }
 
 /* Testimonios */
