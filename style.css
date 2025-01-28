@@ -49,6 +49,8 @@ footer {
     background-color: #FFF;
     font-family: "Simonetta", serif;
     color: #495551;
+    border: solid 3px #2FAED5;
+    border-radius: 15px;
 }
 
 .btn-home {
@@ -74,18 +76,15 @@ footer p a:hover {
     font-family: "Simonetta", serif;
 }
 
-#titulo-conoceme, #titulo-contactame, #titulo-consultoria, #titulo-parrafo-home, #titulo-servicios {
+.titulo-parrafo {
     font-family: "Simonetta", serif;
     color: #495551;
     background-color: #FEEDAA;
 }
 
-#subtitulo-consultoria {
+#subtitulo-consultoria, #subtitulo-servicios {
     font-family: "Simonetta", serif;
-}
-
-hr {
-    border: 1px solid black;
+    color: #495551;
 }
 
 .titulo-slider-home {
@@ -122,7 +121,8 @@ hr {
 }
 
 .seccion-titulo {
-    font-family: "Simonetta", serif;;
+    font-family: "Simonetta", serif;
+    color: #495551;
 }
 
 .carousel-item .container {
@@ -150,10 +150,15 @@ hr {
 .testimonio-info {
     font-weight: bold;
     text-align: center;
-    color: #CB6CE6;
+    color: #495551;
+    font-style: italic;
 }
 
 .testimonio-info p {
     margin-bottom: 0;
     font-size: 1.2rem;
+}
+
+.frase-servicios {
+    color: #495551;
 }
