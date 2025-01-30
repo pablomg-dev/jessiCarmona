@@ -17,10 +17,16 @@ header {
     border-color: #2FAED5;
 }
 
-.menu-items:hover{
+.menu-items:hover {
     color: #2FAED5;
 }
 
+.btn-home {
+    background-color: #FEEDAA;
+    color: black;
+}
+
+/* Menu hamburguesa */
 /* Estilo inicial de las barras */
 .hamburger-bar {
     width: 30px;
@@ -37,38 +43,18 @@ header {
 
 /* Ocultar la barra del medio */
 #menu-button.open .middle {
-    opacity: 0; 
+    opacity: 0;
 }
 
 #menu-button.open .bottom {
     transform: translateY(-9px) rotate(-45deg);
 }
 
-/* Footer */
-footer {
-    background-color: #FFF;
-    font-family: "Simonetta", serif;
-    color: #495551;
-    border: solid 3px #2FAED5;
-    border-radius: 15px;
-}
-
-.btn-home {
-    background-color: #FEEDAA;
-    color: black;
-}
-
-footer p a {
-    text-decoration: none;
-}
-
-footer p a:hover {
-    color: black;
-}
-
 /* Titulos y subtitulos */
 
-#main-conoceme, #main-home-texto, #main-consultoria {
+#main-conoceme,
+#main-home-texto,
+#main-consultoria {
     font-family: "Arimo", sans-serif;
 }
 
@@ -82,7 +68,8 @@ footer p a:hover {
     background-color: #FEEDAA;
 }
 
-#subtitulo-consultoria, #subtitulo-servicios {
+#subtitulo-consultoria,
+#subtitulo-servicios {
     font-family: "Simonetta", serif;
     color: #495551;
 }
@@ -93,22 +80,94 @@ footer p a:hover {
     font-weight: bold;
 }
 
-/* Carrousel imagenes */
+/* Carrousel imagenes home */
 
 .carousel {
-    max-width: 100%; /* Ajusta al ancho del contenedor padre */
-    max-height: 500px; /* Ajusta según tu preferencia */
-    overflow: hidden; /* Evita que las imágenes desborden */
+    position: relative;
+    max-width: 100%;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
 }
 
-.carousel img {
-    width: 100%; /* Asegura que las imágenes ocupen todo el ancho */
-    height: 100%; /* Ajusta las imágenes al alto definido */
-    object-fit: cover; /* Recorta las imágenes manteniendo proporción */
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    position: relative;
 }
 
 .carousel-item img {
-    transition: none !important;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FEEDAA;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: "Simonetta", serif;
+    font-weight: bold;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
+}
+
+@media (min-width: 768px) {
+    .carousel {
+        width: 600px;
+    }
+
+    .carousel-caption {
+        font-size: 16px;
+    }
+
+    .prev,
+    .next {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #FFF;
+    font-family: "Simonetta", serif;
+    color: #495551;
+    border: solid 3px #2FAED5;
+    border-radius: 15px;
+}
+
+#pablomgdev {
+    color: black;
+    text-decoration: none;
 }
 
 /* Testimonios */
