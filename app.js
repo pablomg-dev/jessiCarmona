@@ -7,7 +7,7 @@ let isMenuOpen = false;
 function toggleMenu() {
     isMenuOpen = !isMenuOpen;
 
-    menuButton.classList.toggle('open', isMenuOpen); // Alternar clase 'open'
+    menuButton.classList.toggle('open', isMenuOpen);
     menu.classList.toggle('scale-y-100', isMenuOpen);
     menu.classList.toggle('scale-y-0', !isMenuOpen);
 }
