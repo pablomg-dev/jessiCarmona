@@ -52,9 +52,8 @@ header {
 }
 
 /* Titulos y subtitulos */
-
-#main-conoceme,
 #main-home-texto,
+#main-conoceme,
 #main-consultoria {
     font-family: "Arimo", sans-serif;
 }
@@ -67,12 +66,15 @@ header {
     font-family: "Simonetta", serif;
     color: #495551;
     background-color: #FEEDAA;
+    font-weight: bold;
 }
 
 #subtitulo-consultoria,
-#subtitulo-servicios {
+#subtitulo-servicios
+{
     font-family: "Simonetta", serif;
     color: #495551;
+    font-weight: bold;
 }
 
 .titulo-slider-home {
@@ -81,7 +83,7 @@ header {
     font-weight: bold;
 }
 
-/* Carousel imagenes home */
+/* Carousel Home */
 
 .carousel {
     position: relative;
@@ -120,27 +122,6 @@ header {
     font-weight: bold;
 }
 
-.prev,
-.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 5px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.prev {
-    left: 5px;
-}
-
-.next {
-    right: 5px;
-}
-
 @media (min-width: 768px) {
     .carousel {
         width: 600px;
@@ -169,56 +150,4 @@ footer {
 #pablomgdev {
     color: black;
     text-decoration: none;
-}
-
-/* Testimonios */
-.testimonios .carousel {
-    max-width: 800px;
-}
-
-.carousel-item {
-    height: auto;
-}
-
-.seccion-titulo {
-    font-family: "Simonetta", serif;
-    color: #495551;
-}
-
-.carousel-item .container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.testimonio-imagen {
-    height: 150px;
-    width: 150px;
-    margin: 10px 10px 20px 10px;
-}
-
-.testimonio-texto {
-    max-width: 70%;
-    font-size: 20px;
-    text-align: center;
-    font-size: 1rem;
-}
-
-.testimonio-info {
-    font-weight: bold;
-    text-align: center;
-    color: #495551;
-    font-style: italic;
-}
-
-.testimonio-info p {
-    margin-bottom: 0;
-    font-size: 1.2rem;
-}
-
-.frase-servicios {
-    color: #495551;
 }
