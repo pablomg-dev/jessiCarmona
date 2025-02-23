@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // 🔹 Menú hamburguesa
     const menuButton = document.getElementById("menu-button");
     const menu = document.getElementById("menu");
 
@@ -9,13 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
         function toggleMenu() {
             isMenuOpen = !isMenuOpen;
             menuButton.classList.toggle("open", isMenuOpen);
-            
+
             if (isMenuOpen) {
-                menu.classList.remove("scale-y-0", "hidden");
-                menu.classList.add("scale-y-100", "block");
+                menu.classList.remove("max-h-0");
+                menu.classList.add("max-h-[500px]"); // Expansión suave en vez de inmediato
             } else {
-                menu.classList.remove("scale-y-100", "block");
-                menu.classList.add("scale-y-0", "hidden");
+                menu.classList.remove("max-h-[500px]");
+                menu.classList.add("max-h-0");
             }
         }
 

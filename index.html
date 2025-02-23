@@ -26,35 +26,34 @@
 
         <header>
 
-            <nav class="relative">
-                <!-- Contenedor principal con flex -->
-                <div class="flex items-center justify-between px-2" id="menu-titulo">
-                    <!-- Logo o imagen a la izquierda -->
+            <nav class="relative bg-white shadow-md">
+                <!-- Contenedor principal con flex siempre activo -->
+                <div class="flex items-center justify-between px-4 py-2 md:flex-row w-full" id="menu-titulo">
+                    <!-- Logo a la izquierda -->
                     <a href="#" class="flex items-center">
                         <img src="./media/creandoLogo.png" alt="logo" class="w-40">
                     </a>
-
+            
                     <!-- Botón del menú hamburguesa -->
                     <button id="menu-button" class="md:hidden p-2 border-2 rounded cursor-pointer focus:outline-none">
                         <div class="hamburger-bar top"></div>
                         <div class="hamburger-bar middle"></div>
                         <div class="hamburger-bar bottom"></div>
                     </button>
-
-                    <!-- Menú -->
+            
+                    <!-- Menú (Flex en pantallas grandes) -->
                     <div id="menu"
-                        class="absolute top-full right-0 w-full text-xl md:text-2xl md:static md:flex md:flex-row md:items-center md:justify-end bg-white overflow-hidden transition-all duration-300 ease-in-out transform origin-top scale-y-0 md:scale-y-100">
-                        <a href="#" class="block font-bold text-center p-2 menu-items">Inicio</a>
-                        <a href="./html/servicios.html" class="block font-bold text-center p-2 menu-items">Servicios</a>
-                        <a href="./html/consultoria.html" class="block font-bold text-center p-2 menu-items">Consultoría
-                            1:1</a>
-                        <a href="./html/conoceme.html" class="block font-bold text-center p-2 menu-items">Conoceme</a>
-                        <a href="./html/contactame.html"
-                            class="block font-bold text-center p-2 menu-items">Contactame</a>
+                        class="absolute top-full right-0 w-full text-xl md:text-2xl md:relative md:flex md:items-center md:justify-end bg-white overflow-hidden max-h-0 transition-all duration-300 ease-in-out md:max-h-full md:w-auto md:top-0 md:static">
+                        <a href="#" class="block font-bold text-center p-2 menu-items md:px-4">Inicio</a>
+                        <a href="./html/servicios.html" class="block font-bold text-center p-2 menu-items md:px-4">Servicios</a>
+                        <a href="./html/consultoria.html" class="block font-bold text-center p-2 menu-items md:px-4">Consultoría 1:1</a>
+                        <a href="./html/conoceme.html" class="block font-bold text-center p-2 menu-items md:px-4">Conoceme</a>
+                        <a href="./html/contactame.html" class="block font-bold text-center p-2 menu-items md:px-4">Contactame</a>
                     </div>
                 </div>
-
             </nav>
+            
+
 
         </header>
 
@@ -112,8 +111,10 @@
                             </div>
                         </div>
                     </div>
-                    <button id="prev" class="absolute cursor-pointer left-0 top-1/2 transform -translate-y-1/2 bg-gray-300 text-black px-3 py-1 rounded-l-md">❮</button>
-                    <button id="next" class="absolute cursor-pointer right-0 top-1/2 transform -translate-y-1/2 bg-gray-300 text-black px-3 py-1 rounded-r-md">❯</button>
+                    <button id="prev"
+                        class="absolute cursor-pointer left-0 top-1/2 transform -translate-y-1/2 bg-gray-300 text-black px-3 py-1 rounded-l-md">❮</button>
+                    <button id="next"
+                        class="absolute cursor-pointer right-0 top-1/2 transform -translate-y-1/2 bg-gray-300 text-black px-3 py-1 rounded-r-md">❯</button>
                 </div>
 
             </div>
@@ -123,21 +124,21 @@
             <section class="flex gap-x-6 py-3 bg-white rounded-lg shadow-md items-center justify-center">
                 <!-- Logo de Mercado Pago -->
                 <img src="./media/logo-mercadopago.png" alt="logo mercado pago" class="w-15 sm:w-24">
-            
+
                 <!-- Logo de PayPal -->
                 <img src="./media/logo-paypal.png" alt="logo paypal" class="w-15 sm:w-24">
-            
+
                 <!-- Logo de Western Union -->
                 <img src="./media/logo-westernunion.png" alt="logo western union" class="w-15 sm:w-24">
-            </section>        
-            
+            </section>
+
         </main>
 
         <footer class="text-center py-2">
             <p class="font-semibold">
                 Copyright &#169; Jessi Carmona (2025). Todos los derechos reservados. |
-                Desarrollado por <a href="https://pablomgdev.netlify.app/" target="_blank"
-                    rel="noopener noreferrer" id="pablomgdev">Pablo MG.</a>
+                Desarrollado por <a href="https://pablomgdev.netlify.app/" target="_blank" rel="noopener noreferrer"
+                    id="pablomgdev">Pablo MG.</a>
             </p>
         </footer>
 

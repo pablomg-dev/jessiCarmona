@@ -26,10 +26,10 @@
 
         <header>
 
-            <nav class="relative">
-                <!-- Contenedor principal con flex -->
-                <div class="flex items-center justify-between px-2" id="menu-titulo">
-                    <!-- Logo o imagen a la izquierda -->
+            <nav class="relative bg-white shadow-md">
+                <!-- Contenedor principal con flex siempre activo -->
+                <div class="flex items-center justify-between px-4 py-2 md:flex-row w-full" id="menu-titulo">
+                    <!-- Logo a la izquierda -->
                     <a href="../index.html" class="flex items-center">
                         <img src="../media/creandoLogo.png" alt="logo" class="w-40">
                     </a>
@@ -41,17 +41,19 @@
                         <div class="hamburger-bar bottom"></div>
                     </button>
 
-                    <!-- Menú -->
+                    <!-- Menú (Flex en pantallas grandes) -->
                     <div id="menu"
-                        class="absolute top-full right-0 w-full text-xl md:text-2xl md:static md:flex md:flex-row md:items-center md:justify-end bg-white overflow-hidden transition-all duration-300 ease-in-out transform origin-top scale-y-0 md:scale-y-100">
-                        <a href="../index.html" class="block font-bold text-center p-2 menu-items">Inicio</a>
-                        <a href="./servicios.html" class="block font-bold text-center p-2 menu-items">Servicios</a>
-                        <a href="./consultoria.html" class="block font-bold text-center p-2 menu-items">Consultoría 1:1</a>
-                        <a href="#" class="block font-bold text-center p-2 menu-items">Conoceme</a>
-                        <a href="./contactame.html" class="block font-bold text-center p-2 menu-items">Contactame</a>
+                        class="absolute top-full right-0 w-full text-xl md:text-2xl md:relative md:flex md:items-center md:justify-end bg-white overflow-hidden max-h-0 transition-all duration-300 ease-in-out md:max-h-full md:w-auto md:top-0 md:static">
+                        <a href="../index.html" class="block font-bold text-center p-2 menu-items md:px-4">Inicio</a>
+                        <a href="../html/servicios.html"
+                            class="block font-bold text-center p-2 menu-items md:px-4">Servicios</a>
+                        <a href="../html/consultoria.html"
+                            class="block font-bold text-center p-2 menu-items md:px-4">Consultoría 1:1</a>
+                        <a href="#" class="block font-bold text-center p-2 menu-items md:px-4">Conoceme</a>
+                        <a href="../html/contactame.html"
+                            class="block font-bold text-center p-2 menu-items md:px-4">Contactame</a>
                     </div>
                 </div>
-
             </nav>
 
         </header>
@@ -63,45 +65,72 @@
             </h1>
 
             <p class="text-justify">
-                Hola, soy <em>Jessica María Carmona</em>. Desde hace muchos años, he elegido abrazar mi espíritu emprendedor y creativo. La combinación de la creatividad de mi madre y la influencia de mi padre me han dado la base que ha influenciado y enriquecido mi personalidad y mis proyectos en este camino.
+                Hola, soy <em>Jessica María Carmona</em>. Desde hace muchos años, he elegido abrazar mi espíritu
+                emprendedor y creativo. La combinación de la creatividad de mi madre y la influencia de mi padre me han
+                dado la base que ha influenciado y enriquecido mi personalidad y mis proyectos en este camino.
                 <br>
                 <br>
-                Soy la primera hija de madre italiana, una artista innata y autodidacta a quien siempre he admirado por su habilidad para transformar lo simple en magia a través de sus manos y su forma de dar amor. Por otro lado, mi padre, descendiente de españoles, ha sido comerciante toda su vida, y de él he heredado la fuerza y los valores que me han impulsado siempre a seguir adelante.
+                Soy la primera hija de madre italiana, una artista innata y autodidacta a quien siempre he admirado por
+                su habilidad para transformar lo simple en magia a través de sus manos y su forma de dar amor. Por otro
+                lado, mi padre, descendiente de españoles, ha sido comerciante toda su vida, y de él he heredado la
+                fuerza y los valores que me han impulsado siempre a seguir adelante.
                 <br>
                 <br>
-                Nací en la ciudad de Buenos Aires, bajo el sol en Acuario, con ascendente y luna en Aries, y Venus en Piscis.  Desde mi adolescencia, marcada por la curiosidad, la autenticidad y un toque de rebeldía, comencé un viaje de autoconocimiento y autodescubrimiento, con aciertos y desaciertos, encuentros y desencuentros, que ha sido una valiosa escuela de vida, repleta de lecciones y oportunidades de crecimiento.
+                Nací en la ciudad de Buenos Aires, bajo el sol en Acuario, con ascendente y luna en Aries, y Venus en
+                Piscis. Desde mi adolescencia, marcada por la curiosidad, la autenticidad y un toque de rebeldía,
+                comencé un viaje de autoconocimiento y autodescubrimiento, con aciertos y desaciertos, encuentros y
+                desencuentros, que ha sido una valiosa escuela de vida, repleta de lecciones y oportunidades de
+                crecimiento.
                 <br>
 
                 <!-- <div class="relative w-full h-96 px-3"> -->
-                    <!-- Imagen -->
-                    <!-- <img src="../media/jessi2.jpeg" alt="Efecto Fade" class="w-full h-full object-cover "> -->
+                <!-- Imagen -->
+                <!-- <img src="../media/jessi2.jpeg" alt="Efecto Fade" class="w-full h-full object-cover "> -->
 
-                    <!-- Gradiente superpuesto -->
-                    <!-- <div class="absolute inset-0 bg-gradient-to-r from-white to-transparent"></div> -->
+                <!-- Gradiente superpuesto -->
+                <!-- <div class="absolute inset-0 bg-gradient-to-r from-white to-transparent"></div> -->
                 <!-- </div> -->
             </p>
 
             <p class="text-justify">
                 <br>
-                Mi interés por la lectura y la filosofía me llevó a cuestionar los misterios de la existencia y la naturaleza del ser humano. Fue así como decidí hace 30 años ingresar a la universidad para estudiar psicología, con la esperanza de encontrar algunas respuestas. Durante ese largo tiempo, también exploré diferentes rincones del mundo y me sumergí en las artes expresivas que tanto me inspiraban.
+                Mi interés por la lectura y la filosofía me llevó a cuestionar los misterios de la existencia y la
+                naturaleza del ser humano. Fue así como decidí hace 30 años ingresar a la universidad para estudiar
+                psicología, con la esperanza de encontrar algunas respuestas. Durante ese largo tiempo, también exploré
+                diferentes rincones del mundo y me sumergí en las artes expresivas que tanto me inspiraban.
                 <br>
                 <br>
-                En uno de mis viajes, adquirí un libro que abordaba la sabiduría de Oriente. Fue entonces cuando conecté por primera vez con el budismo, leía sobre meditación y filosofía espiritual sin tener un conocimiento profundo, pero sin darme cuenta, planté una semilla que, con el tiempo, florecería en mi vida.
+                En uno de mis viajes, adquirí un libro que abordaba la sabiduría de Oriente. Fue entonces cuando conecté
+                por primera vez con el budismo, leía sobre meditación y filosofía espiritual sin tener un conocimiento
+                profundo, pero sin darme cuenta, planté una semilla que, con el tiempo, florecería en mi vida.
                 <br>
                 <br>
-                Me desempeñé como bailarina, profesora de danzas y metodos de acondicionamiento psicofisico. Durante muchos años trabaje en el campo de la salud a traves de las artes expresivas, del movimiento y danzaterapia. Sin embargo, un desequilibrio físico que afectó mi audición y mi columna vertebral marcó un antes y un después en mi estilo de vida. Fue en ese momento que descubrí el Yoga.
+                Me desempeñé como bailarina, profesora de danzas y metodos de acondicionamiento psicofisico. Durante
+                muchos años trabaje en el campo de la salud a traves de las artes expresivas, del movimiento y
+                danzaterapia. Sin embargo, un desequilibrio físico que afectó mi audición y mi columna vertebral marcó
+                un antes y un después en mi estilo de vida. Fue en ese momento que descubrí el Yoga.
                 <br>
                 <br>
-                A través de esta disciplina, aprendí prácticas que me ayudaron a restaurar mi salud de manera progresiva y a recuperar mi equilibrio interior. Me certifiqué como Instructora de Yoga, especializándome en yoga terapéutico, técnicas de respiración, relajación y meditación, bajo la guía de maestros nacionales e internacionales que transmiten la rica tradición del sistema de enseñanza integral de India.
+                A través de esta disciplina, aprendí prácticas que me ayudaron a restaurar mi salud de manera progresiva
+                y a recuperar mi equilibrio interior. Me certifiqué como Instructora de Yoga, especializándome en yoga
+                terapéutico, técnicas de respiración, relajación y meditación, bajo la guía de maestros nacionales e
+                internacionales que transmiten la rica tradición del sistema de enseñanza integral de India.
                 <br>
                 <br>
-                Recuerdo que un día, un maestro me dejó una enseñanza que jamás olvidaré: “Jessica, no te quedes en lo físico… ve y busca más allá”. Estas palabras reafirmaron la transformación sutil que estaba experimentando a través de las prácticas y me inspiraron a compartir este camino con otros.
+                Recuerdo que un día, un maestro me dejó una enseñanza que jamás olvidaré: “Jessica, no te quedes en lo
+                físico… ve y busca más allá”. Estas palabras reafirmaron la transformación sutil que estaba
+                experimentando a través de las prácticas y me inspiraron a compartir este camino con otros.
                 <br>
                 <br>
-                En la actualidad, mi propósito es integrar todos estos años de trabajo de consciencia con mi autobiografía y mis estudios sobre el Árbol Genealógico y las Constelaciones Familiares. Todo ello en el marco de mi Proyecto <strong>CreAndo Armonía</strong>. Mi objetivo es dejar de definirme con una única identidad y aprender a expandirme, contribuyendo y creando espacios que fomenten el desarrollo y empoderamiento personal.
+                En la actualidad, mi propósito es integrar todos estos años de trabajo de consciencia con mi
+                autobiografía y mis estudios sobre el Árbol Genealógico y las Constelaciones Familiares. Todo ello en el
+                marco de mi Proyecto <strong>CreAndo Armonía</strong>. Mi objetivo es dejar de definirme con una única
+                identidad y aprender a expandirme, contribuyendo y creando espacios que fomenten el desarrollo y
+                empoderamiento personal.
                 <br>
                 <br>
-                Si has llegado hasta aqui, te invito a unirte a este viaje que yo misma he iniciado, transitado y comprobado hacia una vida más plena y en armonía con vos mismo.
+                Si has llegado hasta aqui, te invito a unirte a este viaje que yo misma he iniciado, transitado y
+                comprobado hacia una vida más plena y en armonía con vos mismo.
             </p>
 
         </main>
@@ -109,8 +138,8 @@
         <footer class="text-center py-2">
             <p class="font-semibold">
                 Copyright &#169; Jessi Carmona (2025). Todos los derechos reservados. |
-                Desarrollado por <a href="https://pablomgdev.netlify.app/" target="_blank"
-                    rel="noopener noreferrer" id="pablomgdev">Pablo MG.</a>
+                Desarrollado por <a href="https://pablomgdev.netlify.app/" target="_blank" rel="noopener noreferrer"
+                    id="pablomgdev">Pablo MG.</a>
             </p>
         </footer>
 
