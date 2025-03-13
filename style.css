@@ -65,9 +65,9 @@ header {
     font-family: "Arimo", sans-serif;
 }
 
-.titulos-home {
+/* .titulos-home {
     font-family: "Simonetta", serif;
-}
+} */
 
 .titulo-parrafo {
     font-family: "Simonetta", serif;
@@ -79,7 +79,8 @@ header {
 #subtitulo-consultoria,
 #subtitulo-servicios,
 #subtitulo-testimonios,
-#subtitulo-mediosdepago
+#subtitulo-mediosdepago,
+.titulos-home
 {
     font-family: "Simonetta", serif;
     color: #495551;

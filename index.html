@@ -33,27 +33,29 @@
                     <a href="#" class="flex items-center">
                         <img src="./media/creandoLogo.png" alt="logo" class="w-40">
                     </a>
-            
+
                     <!-- Botón del menú hamburguesa -->
                     <button id="menu-button" class="md:hidden p-2 border-2 rounded cursor-pointer focus:outline-none">
                         <div class="hamburger-bar top"></div>
                         <div class="hamburger-bar middle"></div>
                         <div class="hamburger-bar bottom"></div>
                     </button>
-            
+
                     <!-- Menú (Flex en pantallas grandes) -->
                     <div id="menu"
                         class="absolute top-full right-0 w-full text-xl md:text-2xl md:relative md:flex md:items-center md:justify-end bg-white overflow-hidden max-h-0 transition-all duration-300 ease-in-out md:max-h-full md:w-auto md:top-0 md:static">
                         <a href="#" class="block font-bold text-center p-2 menu-items md:px-4">Inicio</a>
-                        <a href="./html/servicios.html" class="block font-bold text-center p-2 menu-items md:px-4">Servicios</a>
-                        <a href="./html/consultoria.html" class="block font-bold text-center p-2 menu-items md:px-4">Consultoría 1:1</a>
-                        <a href="./html/conoceme.html" class="block font-bold text-center p-2 menu-items md:px-4">Conoceme</a>
-                        <a href="./html/contactame.html" class="block font-bold text-center p-2 menu-items md:px-4">Contactame</a>
+                        <a href="./html/servicios.html"
+                            class="block font-bold text-center p-2 menu-items md:px-4">Servicios</a>
+                        <a href="./html/consultoria.html"
+                            class="block font-bold text-center p-2 menu-items md:px-4">Consultoría 1:1</a>
+                        <a href="./html/conoceme.html"
+                            class="block font-bold text-center p-2 menu-items md:px-4">Conoceme</a>
+                        <a href="./html/contactame.html"
+                            class="block font-bold text-center p-2 menu-items md:px-4">Contactame</a>
                     </div>
                 </div>
             </nav>
-            
-
 
         </header>
 
@@ -61,9 +63,9 @@
 
             <!-- Contenedor del texto y botón -->
             <div
-                class="bg-[url('./media/jessi1.jpeg')] relative bg-cover md:bg-contain md:bg-no-repeat bg-center h-screen inset-0 flex flex-col items-center justify-center titulos-home text-white">
-                <h1 class="text-2xl font-bold text-center mb-12 titulos-home">
-                    EL VIAJE MÁS LARGO COMIENZA CON UN PASO
+                class="bg-[url('./media/home1.jpg')] relative bg-cover md:bg-contain md:bg-no-repeat bg-center h-screen inset-0 flex flex-col items-center justify-center titulos-home text-white flex justify-between">
+                <h1 class="text-2xl font-bold text-left mb-12 titulos-home text-left">
+                    EL VIAJE MÁS LARGO COMIENZA <br> CON UN PASO
                 </h1>
 
                 <a class="btn-home mb-3 p-3 rounded-lg font-semibold titulos-home" href="./html/servicios.html">QUIERO
@@ -93,24 +95,36 @@
                 </p>
 
                 <div class="carousel">
+
                     <div class="carousel-inner">
+
                         <div class="carousel-item active">
+
                             <a href="./html/servicios.html">
                                 <img src="./media/servicios-img.jpg" alt="Servicios">
                             </a>
-                            <div class="carousel-caption">
-                                <a href="./html/servicios.html" class="btn-carousel">VER MÁS..</a>
+
+                            <div class="carousel-caption mb-3">
+                                <a href="./html/servicios.html" class="btn-carousel titulos-home">VER MAS SERVICIOS</a>
                             </div>
+
                         </div>
+
                         <div class="carousel-item">
+
                             <a href="./html/consultoria.html">
-                                <img src="./media/consultoria-img.png" alt="Consultoría">
+                                <img src="./media/consultoria-img.jpg" alt="Consultoría">
                             </a>
+
                             <div class="carousel-caption">
-                                <a href="./html/consultoria.html" class="btn-carousel">VER MÁS..</a>
+                                <a href="./html/consultoria.html" class="btn-carousel titulos-home">VER MÁS
+                                    CONSULTORIA</a>
                             </div>
+
                         </div>
+
                     </div>
+
                     <button id="prev"
                         class="absolute cursor-pointer left-0 top-1/2 transform -translate-y-1/2 bg-gray-300 text-black px-3 py-1 rounded-l-md">❮</button>
                     <button id="next"
