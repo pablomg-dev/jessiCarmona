@@ -80,8 +80,7 @@ header {
 #subtitulo-servicios,
 #subtitulo-testimonios,
 #subtitulo-mediosdepago,
-.titulos-home
-{
+.titulos-home {
     font-family: "Simonetta", serif;
     color: #495551;
     font-weight: bold;
@@ -97,8 +96,7 @@ header {
     color: #495551;
 }
 
-/* Carousel Home */
-
+/* Carousel Home y Carousel Consultoria */
 .carousel {
     position: relative;
     max-width: 100%;
@@ -119,21 +117,53 @@ header {
 
 .carousel-item img {
     width: 100%;
-    height: auto;
+    height: 400px;
+    object-fit: cover;
     display: block;
 }
 
 .carousel-caption {
     position: absolute;
-    bottom: 5px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     background: #FEEDAA;
-    padding: 5px;
+    padding: 10px;
     border-radius: 3px;
     font-size: 14px;
     font-family: "Simonetta", serif;
     font-weight: bold;
+    text-align: center;
+}
+
+/* Botones de navegación */
+#prev,
+#next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+#prev:hover,
+#next:hover,
+#prevTestimonio:hover,
+#nextTestimonio:hover {
+    background: rgba(0, 0, 0, 0.8);
 }
 
 @media (min-width: 768px) {
@@ -145,10 +175,10 @@ header {
         font-size: 16px;
     }
 
-    .prev,
-    .next {
-        font-size: 18px;
-        padding: 10px;
+    #prev,
+    #next {
+        font-size: 22px;
+        padding: 12px;
     }
 }
 

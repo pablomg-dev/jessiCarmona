@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const testimonios = document.querySelectorAll(".testimonio-slide");
-    const prevBtn = document.getElementById("prevTestimonio");
-    const nextBtn = document.getElementById("nextTestimonio");
+    const prevBtn = document.getElementById("prev");
+    const nextBtn = document.getElementById("next");
     let index = 0;
 
     function showTestimonio(n) {
