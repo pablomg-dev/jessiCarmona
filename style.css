@@ -23,8 +23,14 @@ header {
 
 .btn-home {
     background-color: #FEEDAA;
-    color: black;
+    color: #495551;
     text-decoration: none;
+    font-family: "Simonetta", serif;
+}
+
+.texto-principal-home {
+    color: #495551;
+    font-family: "Simonetta", serif;
 }
 
 /* Menu hamburguesa */
@@ -64,10 +70,6 @@ header {
 #main-consultoria {
     font-family: "Arimo", sans-serif;
 }
-
-/* .titulos-home {
-    font-family: "Simonetta", serif;
-} */
 
 .titulo-parrafo {
     font-family: "Simonetta", serif;
