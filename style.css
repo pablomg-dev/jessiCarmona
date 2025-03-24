@@ -71,10 +71,16 @@ header {
     font-family: "Arimo", sans-serif;
 }
 
-.titulo-parrafo {
+.titulo-parrafo-1 {
     font-family: "Simonetta", serif;
     color: #495551;
     background-color: #FEEDAA;
+    font-weight: bold;
+}
+
+.titulo-parrafo-2 {
+    font-family: "Simonetta", serif;
+    color: #495551;
     font-weight: bold;
 }
 
