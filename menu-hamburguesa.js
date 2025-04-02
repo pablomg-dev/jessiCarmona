@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Función para animar la recarga con fade más rápido
         function animateReload() {
-            document.body.style.transition = "opacity 0.1s"; // Ahora más rápido
+            document.body.style.transition = "opacity 0.1s";
             document.body.style.opacity = "0";
             setTimeout(() => {
                 window.location.reload();
