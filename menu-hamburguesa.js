@@ -22,6 +22,15 @@ document.addEventListener("DOMContentLoaded", function () {
         menuButton.addEventListener("click", toggleMenu);
         console.log("✅ Menú hamburguesa inicializado.");
 
+        // Función para animar la recarga con fade más rápido
+        function animateReload() {
+            document.body.style.transition = "opacity 0.1s"; // Ahora más rápido
+            document.body.style.opacity = "0";
+            setTimeout(() => {
+                window.location.reload();
+            }, 300); // Ajustado a 300ms
+        }
+
         // Agregar evento a los enlaces del menú
         document.querySelectorAll("#menu a").forEach(link => {
             link.addEventListener("click", (event) => {
@@ -29,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 const currentUrl = window.location.pathname;
 
                 if (clickedUrl === currentUrl) {
-                    event.preventDefault(); // Evita la navegación normal
-                    window.location.reload(); // Recarga la página solo si ya estás en ella
+                    event.preventDefault();
+                    animateReload(); // Llama la animación antes de recargar
                 }
             });
         });
@@ -38,13 +47,13 @@ document.addEventListener("DOMContentLoaded", function () {
         // Agregar funcionalidad al logo del menú
         if (logoLink) {
             logoLink.addEventListener("click", (event) => {
-                event.preventDefault(); // Evita la navegación normal
+                event.preventDefault();
                 
                 const homePaths = ["/", "/index.html"];
                 const currentUrl = window.location.pathname;
 
                 if (homePaths.includes(currentUrl)) {
-                    window.location.reload(); // Si ya estás en inicio, recarga la página
+                    animateReload(); // Llama la animación antes de recargar
                 }
             });
         }
