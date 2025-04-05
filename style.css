@@ -94,16 +94,6 @@ header {
     font-weight: bold;
 }
 
-.titulo-slider-home {
-    background-color: #FEEDAA;
-    font-family: "Simonetta", serif;
-    font-weight: bold;
-}
-
-.cliente {
-    color: #495551;
-}
-
 /* Carousel Home*/
 .carousel {
     position: relative;
@@ -148,34 +138,6 @@ header {
 }
 
 /* Botones de navegación */
-#prev,
-#next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px 15px;
-    font-size: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-#prev {
-    left: 10px;
-}
-
-#next {
-    right: 10px;
-}
-
-#prev:hover,
-#next:hover,
-#prevTestimonio:hover,
-#nextTestimonio:hover {
-    background: rgba(0, 0, 0, 0.8);
-}
 
 @media (min-width: 640px) {
     .carousel {
