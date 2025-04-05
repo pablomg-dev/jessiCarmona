@@ -93,15 +93,6 @@ header {
     font-weight: bold;
 }
 
-/* Carousel Home*/
-.carousel {
-    position: relative;
-    max-width: 100%;
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-}
-
 /* Footer */
 footer {
     background-color: #FFF;

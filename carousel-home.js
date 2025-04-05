@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // 🔹 Carrusel Home
-    const carousel = document.querySelector(".carousel-inner");
+    const carousel = document.querySelector("#carousel-inner");
     const items = document.querySelectorAll(".carousel-item");
     const prev = document.querySelector("#prev");
     const next = document.querySelector("#next");
