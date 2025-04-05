@@ -87,8 +87,7 @@ header {
 #subtitulo-consultoria,
 #subtitulo-servicios,
 #subtitulo-testimonios,
-#subtitulo-mediosdepago,
-.titulos-home {
+#subtitulo-mediosdepago {
     font-family: "Simonetta", serif;
     color: #495551;
     font-weight: bold;
@@ -101,58 +100,6 @@ header {
     width: 90%;
     margin: auto;
     overflow: hidden;
-}
-
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-    min-width: 100%;
-    position: relative;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 500px;
-    object-fit: contain;
-    display: block;
-}
-
-
-.carousel-caption {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 250px;
-    background: rgba(254, 237, 170, 0.9);
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    font-family: "Simonetta", serif;
-    font-weight: bold;
-    text-align: center;
-}
-
-/* Botones de navegación */
-
-@media (min-width: 640px) {
-    .carousel {
-        max-width: 600px;
-    }
-
-    .carousel-caption {
-        font-size: 16px;
-    }
-
-    #prev,
-    #next {
-        font-size: 22px;
-        padding: 12px;
-    }
 }
 
 /* Footer */
