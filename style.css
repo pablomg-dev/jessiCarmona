@@ -4,23 +4,6 @@
     grid-template-rows: auto 1fr auto;
 }
 
-header {
-    font-family: "Simonetta", serif;
-}
-
-#menu {
-    z-index: 20;
-    background-color: #FFF;
-}
-
-#menu-button {
-    border-color: #2FAED5;
-}
-
-.menu-items:hover {
-    color: #2FAED5;
-}
-
 .btn-home {
     background-color: #FEEDAA;
     color: #495551;
