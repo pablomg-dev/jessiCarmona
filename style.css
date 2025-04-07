@@ -1,23 +1,11 @@
+/* Layaout principal */
 .div-principal {
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
 }
 
-.btn-home {
-    background-color: #FEEDAA;
-    color: #495551;
-    text-decoration: none;
-    font-family: "Simonetta", serif;
-}
-
-.texto-principal-home {
-    color: #495551;
-    font-family: "Simonetta", serif;
-}
-
 /* Menu hamburguesa */
-/* Estilo inicial de las barras */
 .hamburger-bar {
     width: 30px;
     height: 4px;
@@ -26,7 +14,6 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Transformaciones para la "X" */
 #menu-button.open .top {
     transform: translateY(9px) rotate(45deg);
 }
@@ -37,55 +24,4 @@
 
 #menu-button.open .bottom {
     transform: translateY(-9px) rotate(-45deg);
-}
-
-/* Ajustar el menú en pantallas grandes */
-@media (min-width: 768px) {
-    #menu {
-        display: flex !important;
-        max-height: none !important;
-    }
-}
-
-/* Titulos y subtitulos */
-#main-home-texto,
-#main-conoceme,
-#main-consultoria {
-    font-family: "Arimo", sans-serif;
-}
-
-.titulo-parrafo-1 {
-    font-family: "Simonetta", serif;
-    color: #495551;
-    background-color: #FEEDAA;
-    font-weight: bold;
-}
-
-.titulo-parrafo-2 {
-    font-family: "Simonetta", serif;
-    color: #495551;
-    font-weight: bold;
-}
-
-#subtitulo-consultoria,
-#subtitulo-servicios,
-#subtitulo-testimonios,
-#subtitulo-mediosdepago {
-    font-family: "Simonetta", serif;
-    color: #495551;
-    font-weight: bold;
-}
-
-/* Footer */
-footer {
-    background-color: #FFF;
-    font-family: "Simonetta", serif;
-    color: #495551;
-    border: solid 3px #2FAED5;
-    border-radius: 15px;
-}
-
-#pablomgdev {
-    color: black;
-    text-decoration: none;
 }
