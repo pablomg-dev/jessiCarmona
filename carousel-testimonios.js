@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     const testimonios = document.querySelectorAll(".testimonio-slide");
-    const prevBtn = document.getElementById("prev");
-    const nextBtn = document.getElementById("next");
     let index = 0;
 
     function showTestimonio(n) {
@@ -10,16 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
             testimonio.classList.toggle("opacity-0", i !== n);
         });
     }
-
-    prevBtn.addEventListener("click", () => {
-        index = (index - 1 + testimonios.length) % testimonios.length;
-        showTestimonio(index);
-    });
-
-    nextBtn.addEventListener("click", () => {
-        index = (index + 1) % testimonios.length;
-        showTestimonio(index);
-    });
 
     // Cambio automático cada 5 segundos
     setInterval(() => {
