@@ -9,11 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Cambio automático cada 5 segundos
     setInterval(() => {
         index = (index + 1) % testimonios.length;
         showTestimonio(index);
     }, 5000);
 
-    showTestimonio(index); // Mostrar el primer testimonio
+    showTestimonio(index);
 });
