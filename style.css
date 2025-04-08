@@ -25,3 +25,17 @@
 #menu-button.open .bottom {
     transform: translateY(-9px) rotate(-45deg);
 }
+
+#quiero-empezar {
+    font-family: 'Simonetta', serif;
+    font-weight: 600;
+    /* font-semibold */
+    background-color: #feedaa;
+    color: #495551;
+    padding: 0.5rem;
+    /* p-2 (8px) */
+    border-radius: 0.75rem;
+    /* rounded-xl (12px) */
+    width: auto;
+    display: inline-block;
+}
