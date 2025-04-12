@@ -1,4 +1,3 @@
-```markdown
 # Soy Jessi Carmona - CreAndo Armonia ComUnidad 🌿  
 **Sitio web para terapeuta de artes sanadoras**
 
@@ -23,6 +22,4 @@ Crear un espacio digital armónico, claro y cálido, que comunique el propósito
 - Secciones informativas sobre servicios, consultoría, conoceme y contacto
 
 ## 🔗 Enlace al sitio
-[www.soyjessicarmona.com](https://soyjessicarmona.com/) *(reemplazar con el link real si está online)*
-
----
+[www.soyjessicarmona.com](https://soyjessicarmona.com/)
