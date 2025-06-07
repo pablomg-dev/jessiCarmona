@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         menuButton.addEventListener("click", toggleMenu);
-        console.log("✅ Menú hamburguesa inicializado.");
 
         // Función para animar la recarga con fade más rápido
         function animateReload() {

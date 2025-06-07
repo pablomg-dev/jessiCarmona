@@ -44,9 +44,5 @@ document.addEventListener("DOMContentLoaded", function () {
         // Inicializa el carrusel
         updateCarousel();
         startAutoSlide();
-
-        console.log("✅ Carrusel del Home inicializado con auto-slide.");
-    } else {
-        console.log("ℹ️ No hay carrusel en esta página.");
     }
 });
