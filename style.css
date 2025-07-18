@@ -1,9 +1,66 @@
-/* Layaout principal */
+#quiero-empezar.btn-quiero-empezar {
+    font-size: 0.95rem;
+    padding: 0.35rem 0.9rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+/* Sombra para el texto principal del h1 */
+.sombra-texto {
+    text-shadow: 4px 10px 40px rgba(0,0,0,0.7), 0 3px 8px #fff;
+}
+/* Fondo principal y desenfoque solo con CSS */
 .div-principal {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('./media/fondo1.jpg');
+    background-size: cover;
+    background-position: center;
     display: grid;
-    min-height: 100dvh;
     grid-template-rows: auto 1fr auto;
 }
+
+.desenfoque-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background: rgba(255,255,255,0.10);
+}
+
+.contenido-principal {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-home {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home-hero {
+    background-image: url('./media/home1.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #fff;
+    padding-top: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+}
+/* Layaout principal */
+
 
 /* Menu hamburguesa */
 .hamburger-bar {

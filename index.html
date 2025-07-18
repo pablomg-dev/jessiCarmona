@@ -39,6 +39,8 @@
 <body>
 
     <div class="div-principal">
+        <div class="desenfoque-fondo"></div>
+        <div class="contenido-principal">
 
         <header class="font-[Simonetta]">
 
@@ -82,17 +84,15 @@
 
         <main>
 
-            <div class="px-3 md:px-20 lg:px-32 xl:px-44">
-                <div
-                    class="bg-[url('./media/home1.jpg')] relative bg-cover md:bg-contain md:bg-no-repeat bg-center h-screen inset-0 flex flex-col justify-start text-white pt-20">
+            <div class="contenedor-home">
+                <div class="home-hero">
 
                     <h1
-                        class="text-[#495551] font-['Simonetta',_serif] text-2xl font-bold text-left mb-6 pl-6 md:pl-14 lg:pl-24 xl:pl-54">
+                        class="text-[#495551] font-['Simonetta',_serif] text-base font-bold text-left mb-4 pl-6 md:pl-14 lg:pl-24 xl:pl-54 sombra-texto">
                         "EL VIAJE MÁS LARGO <br> COMIENZA CON <br> UN PRIMER PASO"
                     </h1>
-
-                    <div class="w-full text-left pl-6 md:pl-14 lg:pl-24 xl:pl-54">
-                        <a href="./html/consultoria.html" id="quiero-empezar">
+                    <div class="w-full text-left pl-3 md:pl-14 lg:pl-24 xl:pl-54">
+                        <a href="./html/consultoria.html" id="quiero-empezar" class="btn-quiero-empezar">
                             QUIERO EMPEZAR
                         </a>
                     </div>
@@ -108,106 +108,47 @@
                 </h2>
 
                 <h2
-                    class="text-xl lg:text-2xl mb-3 p-2 text-center font-['Simonetta',_serif] text-[#495551] font-bold rounded-xl">
+                    class="text-xl lg:text-2xl mb-3 p-2 text-center font-['Simonetta',_serif] text-white font-extrabold rounded-xl">
                     Desarrollando el potencial interior a través de la Espiritualidad, la Sanación y el despertar de la Creatividad
                 </h2>
 
-                <p class="mb-3 text-center lg:text-lg font-['Arimo',_sans-serif']">
-                    Mi desempeño como <span class="text-cyan-600 font-bold text-xl inline-flex items-center">Acompañante
+                <p class="mb-3 text-center lg:text-lg font-['Arimo',_sans-serif'] text-white font-bold">
+                    Mi desempeño como <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Acompañante
                         Terapéutica
                         <i class="fas fa-hand-holding-heart ml-2 text-2xl"></i></span><br>
-                    <span class="text-cyan-600 font-bold text-xl inline-flex items-center">Meditadora <i
+                    <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Meditadora <i
                             class="fas fa-seedling ml-2 text-2xl"></i></span><br>
-                    <span class="text-cyan-600 font-bold text-xl inline-flex items-center">Instructora de Yoga <i
+                    <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Instructora de Yoga <i
                             class="fas fa-solid fa-om ml-2 text-2xl"></i></span><br>
                     ha sido el puente para abrir los caminos hacia mi propio desarrollo evolutivo personal y creativo.
                     Es un
                     desafío, aprendizaje y transformación constante en el Ser y en el Hacer, en la habilidad de
                     compartir, acompañar y guiar a otros en el proceso de <span
-                        class="text-cyan-600 font-bold text-xl inline-flex items-center">expansión de consciencia <i
+                        class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">expansión de consciencia <i
                             class="fas fa-brain ml-2 text-2xl"></i></span> y en los aspectos que nos hacen crecer,
                     recordando que todos somos parte de un <span
-                        class="text-cyan-600 font-bold text-xl inline-flex items-center">todo <i
+                        class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">todo <i
                             class="fas fa-globe-americas ml-2 text-2xl"></i></span>.
                     <br><br>
                     Mi enfoque se centra en ayudarte a reconectar con tu potencial interior, fortalezas y
                     creatividad. Explorándote a través de <span
-                        class="text-cyan-600 font-bold text-xl inline-flex items-center">herramientas prácticas para
+                        class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">herramientas prácticas para
                         el autoconocimiento</span> de ayer, hoy y mañana,
-                    permitiendo descubrir una mejor versión de vos mismo/a y un bienestar <span class="text-cyan-600 font-bold text-xl inline-flex items-center">integral <i
+                    permitiendo descubrir una mejor versión de vos mismo/a y un bienestar <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">integral <i
                             class="fas fa-spa ml-2 text-2xl"></i></span>.
                     <br><br>
-                    <span class="text-cyan-600 font-bold text-xl inline-flex items-center">Crear Armonía en la Vida
+                    <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Crear Armonía en la Vida
                     </span> es un objetivo valioso y necesario en estos
-                    tiempos <span class="text-cyan-600 font-bold text-xl inline-flex items-center">¡Unite!</span>
+                    tiempos <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">¡Unite!</span>
                 </p>
 
                 <br>
 
-                <!-- Carousel Home -->
-                <div class="relative w-[90%] max-w-full sm:max-w-[600px] mx-auto overflow-hidden">
-
-                    <!-- Carousel Inner -->
-                    <div class="flex transition-transform duration-500 ease-in-out" id="carousel-inner">
-
-                        <!-- Slide 1 -->
-                        <div class="carousel-item min-w-full relative">
-                            <a href="./html/servicios.html">
-                                <img src="./media/servicios-home.jpg" alt="Servicios"
-                                    class="w-full h-[500px] object-contain block" />
-                            </a>
-
-                            <div
-                                class="absolute top-[5%] left-1/2 -translate-x-1/2 bg-[#feedaa]/90 text-[#495551] text-center font-bold font-['Simonetta',_serif] px-4 py-3 rounded-xl w-[90%] max-w-[250px] text-sm sm:text-base md:text-lg">
-                                <a href="./html/servicios.html" class="block">VER SERVICIOS</a>
-                            </div>
-                        </div>
-
-
-                        <!-- Slide 2 -->
-                        <div class="carousel-item min-w-full relative">
-                            <a href="./html/consultoria.html">
-                                <img src="./media/consultoria-home.jpg" alt="Consultoría"
-                                    class="w-full h-[500px] object-contain block" />
-                            </a>
-
-                            <div
-                                class="absolute top-[5%] left-1/2 -translate-x-1/2 bg-[#feedaa]/90 text-[#495551] text-center font-bold font-['Simonetta',_serif] px-4 py-3 rounded-xl w-[90%] max-w-[250px] text-sm sm:text-base md:text-lg">
-                                <a href="./html/consultoria.html" class="block">VER CONSULTORÍA</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- Prev Button -->
-                    <button id="prev"
-                        class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 text-white px-4 py-2 text-xl rounded-l-md cursor-pointer transition-colors duration-300 hover:bg-black/80 z-10">
-                        ❮
-                    </button>
-
-                    <!-- Next Button -->
-                    <button id="next"
-                        class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 text-white px-4 py-2 text-xl rounded-r-md cursor-pointer transition-colors duration-300 hover:bg-black/80 z-10">
-                        ❯
-                    </button>
-
-                </div>
+                
 
             </div>
 
-            <h2 class="text-2xl text-center font-['Simonetta',_serif] text-[#495551] font-bold mt-4">Medios de pago</h2>
-
-            <section class="flex gap-x-6 py-3 bg-[#FEEDAA] rounded-lg shadow-md items-center justify-center">
-                <!-- Logo de Mercado Pago -->
-                <img src="./media/logo-mercadopago.png" alt="logo mercado pago" class="w-15 sm:w-24">
-
-                <!-- Logo de PayPal -->
-                <img src="./media/logo-paypal.png" alt="logo paypal" class="w-15 sm:w-24">
-
-                <!-- Logo de Western Union -->
-                <img src="./media/logo-westernunion.png" alt="logo western union" class="w-15 sm:w-24">
-            </section>
-
+            
         </main>
 
         <footer class="text-center py-2 border-2 border-[#2FAED5] rounded-xl bg-white">
@@ -218,10 +159,13 @@
             </p>
         </footer>
 
+        </div>
+        </div>
     </div>
 
     <script src="./menu-hamburguesa.js"></script>
     <script src="./carousel-home.js"></script>
+
 </body>
 
 </html>
