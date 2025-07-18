@@ -35,107 +35,97 @@
 
 <body>
 
-    <div class="div-principal bg-[url('../media/fondo1.jpg')] bg-cover bg-center">
-
-        <header class="font-[Simonetta]">
-
-            <nav class="relative bg-white shadow-md border-2 border-[#2FAED5] rounded-xl">
-                <!-- Contenedor principal con flex siempre activo -->
-                <div class="flex items-center justify-between px-4 py-2 md:flex-row w-full" id="menu-titulo">
-                    <!-- Logo a la izquierda -->
-                    <a href="../index.html" class="flex items-center">
-                        <img src="../media/creandoLogo.png" alt="logo" class="w-20">
-                    </a>
-
-                    <!-- Botón del menú hamburguesa -->
-                    <button id="menu-button"
-                        class="border border-[#2FAED5] md:hidden p-2 border-2 rounded cursor-pointer focus:outline-none">
-                        <div class="hamburger-bar top"></div>
-                        <div class="hamburger-bar middle"></div>
-                        <div class="hamburger-bar bottom"></div>
-                    </button>
-
-                    <!-- Menú (Flex en pantallas grandes) -->
-                    <div id="menu"
-                        class="absolute top-full right-0 w-full text-xl lg:text-2xl md:relative md:flex md:items-center md:justify-end bg-white overflow-hidden max-h-0 transition-all duration-300 ease-in-out md:max-h-full md:w-auto md:top-0 md:static">
-                        <a href="../index.html"
-                            class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Inicio</a>
-                        <a href="../html/servicios.html"
-                            class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Servicios</a>
-                        <a href="#"
-                            class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Consultoría
-                            1:1</a>
-                        <a href="../html/conoceme.html"
-                            class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Conoceme</a>
-                        <a href="../html/contactame.html"
-                            class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Contactame</a>
+    <div class="div-principal bg-[url('../media/fondo1.jpg')] bg-cover bg-center min-h-screen relative">
+        <div class="desenfoque-fondo"></div>
+        <div class="contenido-principal relative z-10">
+            <header class="font-[Simonetta]">
+                <nav class="relative bg-white shadow-md border-2 border-[#2FAED5] rounded-xl">
+                    <!-- Contenedor principal con flex siempre activo -->
+                    <div class="flex items-center justify-between px-4 py-2 md:flex-row w-full" id="menu-titulo">
+                        <!-- Logo a la izquierda -->
+                        <a href="../index.html" class="flex items-center">
+                            <img src="../media/creandoLogo.png" alt="logo" class="w-20">
+                        </a>
+                        <!-- Botón del menú hamburguesa -->
+                        <button id="menu-button"
+                            class="border border-[#2FAED5] md:hidden p-2 border-2 rounded cursor-pointer focus:outline-none">
+                            <div class="hamburger-bar top"></div>
+                            <div class="hamburger-bar middle"></div>
+                            <div class="hamburger-bar bottom"></div>
+                        </button>
+                        <!-- Menú (Flex en pantallas grandes) -->
+                        <div id="menu"
+                            class="absolute top-full right-0 w-full text-xl lg:text-2xl md:relative md:flex md:items-center md:justify-end bg-white overflow-hidden max-h-0 transition-all duration-300 ease-in-out md:max-h-full md:w-auto md:top-0 md:static">
+                            <a href="../index.html"
+                                class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Inicio</a>
+                            <a href="../html/servicios.html"
+                                class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Servicios</a>
+                            <a href="#"
+                                class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Consultoría
+                                1:1</a>
+                            <a href="../html/conoceme.html"
+                                class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Conoceme</a>
+                            <a href="../html/contactame.html"
+                                class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Contactame</a>
+                        </div>
                     </div>
-                </div>
-            </nav>
-
-        </header>
-
-        <br>
-
-        <main class="px-3 pb-3 md:px-20 lg:px-32 xl:px-44">
-
-            <h1
-                class="font-['Simonetta',_serif] text-[#495551] bg-[#FEEDAA] text-3xl p-2 font-bold text-center mb-3 rounded-xl">
-                Consultoría 1:1
-            </h1>
-
-            <h2 class="text-2xl mb-2 text-center font-['Simonetta',_serif] text-[#495551] font-bold">
-                ARTES TERAPÉUTICAS PARA LA SALUD HOLÍSTICA
-            </h2>
-
-            <hr>
-
-            <img src="../media/consultoria1.jpeg" alt="jessi carmona foto" class="mx-auto lg:w-2/3">
-
-            <p class="text-justify mb-6 lg:text-lg font-['Arimo',_sans-serif]">
+                </nav>
+            </header>
+            <br>
+            <main class="px-3 pb-3 md:px-20 lg:px-32 xl:px-44">
+                <h1
+                    class="font-['Simonetta',_serif] text-[#495551] bg-[#FEEDAA] text-3xl p-2 font-bold text-center mb-3 rounded-xl">
+                    Consultoría 1:1
+                </h1>
+                <h2 class="text-2xl mb-2 text-center font-['Simonetta',_serif] text-white font-extrabold">
+                    ARTES TERAPÉUTICAS PARA LA SALUD HOLÍSTICA
+                </h2>
+                <hr>
+                <img src="../media/consultoria1.jpeg" alt="jessi carmona foto" class="mx-auto lg:w-2/3 rounded-xl">
+                <p class="text-justify mb-6 lg:text-lg font-['Arimo',_sans-serif] text-white font-bold">
                 <br>
-                ¡Hola! Me alegra mucho que estés aquí y que te intereses en los <span class="text-cyan-600 font-bold inline-flex items-center">ENCUENTROS INDIVIDUALES</span>  conmigo. Este
+                ¡Hola! Me alegra mucho que estés aquí y que te intereses en los <span class="text-[#FEEDAA] font-extrabold inline-flex items-center">ENCUENTROS INDIVIDUALES</span>  conmigo. Este
                 espacio es para que puedas explorar tus inquietudes, lo que sientes y las
-                circunstancias que has vivido para comprender mejor tu presente. Es un lugar seguro y respetuoso donde atenderemos tu consulta desde un <span class="text-cyan-600 font-bold inline-flex items-center">ENFOQUE INTEGRAL</span> considerando que nuestra salud física, mental, emocional y espiritual están interconectadas para lograr <span class="text-cyan-600 font-bold inline-flex items-center">BIENESTAR</span>.
+                circunstancias que has vivido para comprender mejor tu presente. Es un lugar seguro y respetuoso donde atenderemos tu consulta desde un <span class="text-[#FEEDAA] font-bold inline-flex items-center">ENFOQUE INTEGRAL</span> considerando que nuestra salud física, mental, emocional y espiritual están interconectadas para lograr <span class="text-[#FEEDAA] font-extrabold inline-flex items-center">BIENESTAR</span>.
                 <br>
                 <br>
                 La Consultoría Holística se basa en una colaboración cercana donde te acompaño en el proceso
-                de <span class="text-cyan-600 font-bold inline-flex items-center">AUTOCONOCIMIENTO</span> y descubrir tus propias respuestas para avanzar con el flujo de la vida, sobrepasar obstaculos, conflictos y situaciones difíciles. La frase
-                “Sin raíces no hay Alas” es muy significativa; nos recuerda la importancia de <span class="text-cyan-600 font-bold inline-flex items-center">CONOCER NUESTRO PASADO</span>
-                para mirarlo con los ojos del amor y honrar nuestros orígenes para poder <span class="text-cyan-600 font-bold inline-flex items-center">VOLAR HACIA UN FUTURO MEJOR</span>.
+                de <span class="text-[#FEEDAA] font-bold inline-flex items-center">AUTOCONOCIMIENTO</span> y descubrir tus propias respuestas para avanzar con el flujo de la vida, sobrepasar obstaculos, conflictos y situaciones difíciles. La frase
+                “Sin raíces no hay Alas” es muy significativa; nos recuerda la importancia de <span class="text-[#FEEDAA] font-extrabold inline-flex items-center">CONOCER NUESTRO PASADO</span>
+                para mirarlo con los ojos del amor y honrar nuestros orígenes para poder <span class="text-[#FEEDAA] font-extrabold inline-flex items-center">VOLAR HACIA UN FUTURO MEJOR</span>.
                 <br>
                 <br>
-                A través de mi guía personalizada, te compartiré conocimientos en Psico-genealogía y el Transgeneracional, donde mediante la exploración de <span class="text-cyan-600 font-bold inline-flex items-center">TU ÁRBOL GENEALÓGICO</span> familiar buscaremos como la información heredada puede estar inpactándote ya sea de manera negativa, como positiva <span class="text-cyan-600 font-bold inline-flex items-center">CONECTANDOTE CON TUS DONES</span>. Te
-                brindaré herramientas y otros recursos terapéuticos que te ayudarán a liberarte de patrones o creencias limitantes, encontrar soluciones, claridad y <span class="text-cyan-600 font-bold inline-flex items-center">RESTABLECER EL EQUILIBRIO</span>.
+                A través de mi guía personalizada, te compartiré conocimientos en Psico-genealogía y el Transgeneracional, donde mediante la exploración de <span class="text-[#FEEDAA] font-extrabold inline-flex items-center">TU ÁRBOL GENEALÓGICO</span> familiar buscaremos como la información heredada puede estar inpactándote ya sea de manera negativa, como positiva <span class="text-[#FEEDAA] font-extrabold inline-flex items-center">CONECTANDOTE CON TUS DONES</span>. Te
+                brindaré herramientas y otros recursos terapéuticos que te ayudarán a liberarte de patrones o creencias limitantes, encontrar soluciones, claridad y <span class="text-[#FEEDAA] font-extrabold inline-flex items-center">RESTABLECER EL EQUILIBRIO</span>.
                 <br>
 
                 <br>
                 ¿Te has sentido alguna vez atrapado/a en patrones repetitivos en tu vida? Es posible que no te des
-                cuenta, pero la información que llevas contigo puede influir en tus <span class="text-cyan-600 font-bold inline-flex items-center">PENSAMIENTOS, EMOCIONES Y ACCIONES</span> de manera sorprendente.
+                cuenta, pero la información que llevas contigo puede influir en tus <span class="text-[#FEEDAA] font-extrabold inline-flex items-center">PENSAMIENTOS, EMOCIONES Y ACCIONES</span> de manera sorprendente.
                 Esta herencia transgeneracional se transmite de generación en generación,
                 moldeando nuestra personalidad, nuestras elecciones y relaciones con los demás.
                 <br>
                 <br>
 
-                <img src="../media/consultoria2.jpg" alt="jessi carmona foto" class="mx-auto lg:w-1/2">
+                <img src="../media/consultoria2.jpg" alt="jessi carmona foto" class="mx-auto lg:w-1/2 rounded-xl">
 
                 <br>
                 Imagina poder deshacerte de esas cadenas o nudos invisibles, al hacerlo, no solo podrás tomar conciencia
-                y evolucionar, sino que también podrás <span class="text-cyan-600 font-bold inline-flex items-center">CREAR VÍNCULOS MÁS AUTÉNTICOS</span> y desarrollarte en las áreas de tu
+                y evolucionar, sino que también podrás <span class="text-[#FEEDAA] font-extrabold inline-flex items-center">CREAR VÍNCULOS MÁS AUTÉNTICOS</span> y desarrollarte en las áreas de tu
                 vida que desees prosperar con plenitud, paz y creatividad.
                 <br>
                 <br>
-                ¿Cómo funciona? Es un camino que está diseñado en <span class="text-cyan-600 font-bold inline-flex items-center">DOS SESIONES</span> entre vos y yo para acompañarte y sostenerte en tu proceso de reconectar con lo más
-                esencial y virtuoso de vos mismo/a, facilitando la introspección, el autodescubrimiento y la <span class="text-cyan-600 font-bold inline-flex items-center">TRANSFORMACIÓN PERSONAL</span>.
+                ¿Cómo funciona? Es un camino que está diseñado en <span class="text-[#FEEDAA] font-extrabold inline-flex items-center">DOS SESIONES</span> entre vos y yo para acompañarte y sostenerte en tu proceso de reconectar con lo más
+                esencial y virtuoso de vos mismo/a, facilitando la introspección, el autodescubrimiento y la <span class="text-[#FEEDAA] font-extrabold inline-flex items-center">TRANSFORMACIÓN PERSONAL</span>.
                 <br>
                 <br>
                 En la primera, tendremos una entrevista para hablar sobre lo
                 que te preocupa, o deseas trabajar o modificar. En la segunda sesión, profundizaremos en tu razón de
                 consulta durante al menos dos horas. Después de eso, te dejaré con algunos ejercicios y recursos según tu caso, para que puedas
-                seguir <span class="text-cyan-600 font-bold inline-flex items-center">INTEGRANDO LO APRENDIDO</span> en esta experiencia.
+                seguir <span class="text-[#FEEDAA] font-extrabold inline-flex items-center">INTEGRANDO LO APRENDIDO</span> en esta experiencia.
                 <br>
                 <br>
-                Si decides avanzar, podes optar por retribuirme ambos encuentros juntos y obtener un <span class="text-cyan-600 font-bold inline-flex items-center">BENEFICIO</span>, o
+                Si decides avanzar, podes optar por retribuirme ambos encuentros juntos y obtener un <span class="text-[#FEEDAA] font-extrabold inline-flex items-center">BENEFICIO</span>, o
                 hacerlo por separado. Recuerda que los turnos se agendarán una vez que completes la retribución
                 económica. Si tenes más preguntas o necesitas más información, ¡no dudes en preguntar! Te espero con
                 amor hacia tu propia historia.
@@ -255,44 +245,46 @@
 
             <br>
 
-            <p class="text-justify mb-6 lg:text-lg font-['Arimo',_sans-serif]">
+            <p class="text-justify mb-6 lg:text-lg font-['Arimo',_sans-serif] text-white">
                 Las sesiones son para vos si:
                 <br>
-                <span class="text-cyan-600 font-bold inline-flex items-center">1. Deseas comprender patrones familiares:</span> entender mejor quien sos y cómo las experiencias pasadas
+                <span class="font-extrabold inline-flex items-center">1. Deseas comprender patrones familiares:</span> entender mejor quien sos y cómo las experiencias pasadas
                 influyen en tu vida actual para poder superarlas y seguir hacia adelante.
                 <br>
-                <span class="text-cyan-600 font-bold inline-flex items-center">2. Integrar heridas emocionales:</span> reconocer y liberar heridas, patrones o conflictos no resueltos para
+                <span class="font-extrabold inline-flex items-center">2. Integrar heridas emocionales:</span> reconocer y liberar heridas, patrones o conflictos no resueltos para
                 promover tu bienestar emocional y la salud mental.
                 <br>
-                <span class="text-cyan-600 font-bold inline-flex items-center">3. Mejorar relaciones:</span> al entender las raíces de ciertos comportamientos o dificultades, podras lograr
+                <span class="font-extrabold inline-flex items-center">3. Mejorar relaciones:</span> al entender las raíces de ciertos comportamientos o dificultades, podras lograr
                 fortalecer vínculos, fomentar relaciones más saludables y armoniosas para sentirte con más seguridad y
                 confianza.
                 <br>
-                <span class="text-cyan-600 font-bold inline-flex items-center">4. Tomar decisiones con mayor claridad:</span> resolver conflictos internos te ayudará a experimentar mayor
+                <span class="font-extrabold inline-flex items-center">4. Tomar decisiones con mayor claridad:</span> resolver conflictos internos te ayudará a experimentar mayor
                 claridad
                 para tomar decisiones importantes en tu vida.
                 <br>
-                <span class="text-cyan-600 font-bold inline-flex items-center">5. Reconocer talentos y recursos familiares:</span> descubrir habilidades, valores o historias de éxito en la
+                <span class="font-extrabold inline-flex items-center">5. Reconocer talentos y recursos familiares:</span> descubrir habilidades, valores o historias de éxito en la
                 familia puede inspirar y potenciar el crecimiento personal y profesional.
                 <br>
-                <span class="text-cyan-600 font-bold inline-flex items-center">6. Fomentar el crecimiento personal:</span> este proceso favorece el autoconocimiento, la aceptación y el
+                <span class="font-extrabold inline-flex items-center">6. Fomentar el crecimiento personal:</span> este proceso favorece el autoconocimiento, la aceptación y el
                 crecimiento emocional, ayudándote a sentirte más en paz con vos mismo/a y con un sentido de pertenencia.
                 <br>
-                <span class="text-cyan-600 font-bold inline-flex items-center">7. Aprender técnicas de meditación, arteterapia y relajación:</span> descubre prácticas para el manejo del estrés y la
+                <span class="font-extrabold inline-flex items-center">7. Aprender técnicas de meditación, arteterapia y relajación:</span> descubre prácticas para el manejo del estrés y la
                 ansiedad de los tiempos actuales, cultivar una mente más serena y centrada para vivir con más consciencia y armonía.
             </p>
 
-            <p class="text-justify mb-6 lg:text-lg font-['Arimo',_sans-serif] italic text-cyan-600">
+            <p class="text-justify mb-6 lg:text-lg font-['Arimo',_sans-serif] italic text-white">
                 Las sesiones no sustituyen ningún tratamiento clínico, psicoterapéutico ni psiquiátrico de la terapia
                 convencional. Sin embargo, pueden complementar los procesos que estés llevando a cabo, ofreciendo una
                 mirada alternativa a tu problemática o consulta.
             </p>
 
 
-        </main>
+            </main>
+        </div>
     </div>
 
-    <footer class="text-center py-2 border-2 border-[#2FAED5] rounded-xl">
+    <div>
+    <footer class="text-center py-2 border-2 border-[#2FAED5] rounded-xl bg-white">
         <p class="font-semibold font-['Simonetta',_serif] text-[#495551]">
             Copyright &#169; Jessi Carmona (2025) | Fotografías Diego Lapiz |
             Desarrollado por <a href="https://pablomgdev.netlify.app/" target="_blank" rel="noopener noreferrer"
