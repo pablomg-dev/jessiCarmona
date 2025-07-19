@@ -93,16 +93,23 @@
 
             <main>
 
+                <!-- Hero -->
                 <div class="p-4 pb-0 max-w-[1200px] mx-auto">
                     <div
-                        class="relative min-h-[60vh] flex flex-col justify-start text-white pt-4 mb-8 w-full overflow-hidden px-6 rounded-2xl bg-white">
-                        <div class="absolute inset-0 w-full h-full bg-[url('./media/home1.jpg')] bg-contain bg-no-repeat bg-center rounded-2xl z-0"></div>
-                        <div class="relative z-10">
+                        class="relative h-[60vh] flex flex-col justify-center text-white mb-8 w-full overflow-hidden px-6 rounded-2xl bg-white">
 
+                        <!-- Imagen de fondo escalable -->
+                        <div
+                            class="absolute inset-0 w-full h-full bg-[url('./media/home1.jpg')] bg-cover bg-center rounded-2xl z-0 transition-transform duration-500 ease-in-out md:scale-105 lg:scale-110">
+                        </div>
+
+                        <!-- Texto encima -->
+                        <div class="relative z-10">
                             <h1
                                 class="text-[#495551] font-['Simonetta',_serif] text-base font-bold text-left mb-4 sombra-texto">
                                 "EL VIAJE MÁS LARGO <br> COMIENZA CON <br> UN PRIMER PASO"
                             </h1>
+
                             <div class="w-full text-left">
                                 <a href="./html/consultoria.html"
                                     class="font-['Simonetta',_serif] font-semibold bg-[#FEEDAA] text-[#495551] px-4 py-2 rounded-xl inline-block text-base shadow transition hover:bg-[#ffe070] hover:scale-105">
@@ -110,8 +117,10 @@
                                 </a>
                             </div>
                         </div>
+
                     </div>
                 </div>
+
 
                 <div class="flex flex-col items-center justify-center p-3 pt-0 md:px-20 lg:px-32 xl:px-44">
 
@@ -126,8 +135,8 @@
                         Desarrollando el potencial interior a través de la Espiritualidad, la Sanación y el despertar de
                         la Creatividad
                     </h2>
-                    <br>
-                    <p class="mb-3 text-center lg:text-lg font-['Arimo',_sans-serif'] text-white font-bold">
+
+                    <p class="mb-3 text-center lg:text-lg font-['Arimo',_sans-serif] text-white font-bold">
                         Mi desempeño como <span
                             class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Acompañante
                             Terapéutica
@@ -161,10 +170,6 @@
                         tiempos <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">¡Unite!</span>
                     </p>
 
-                    <br>
-
-
-
                 </div>
 
 
@@ -182,7 +187,7 @@
     </div>
     </div>
 
-    <script src="./menu-hamburguesa.js"></script>
+    <script src="./js/menu-hamburguesa.js"></script>
 
 </body>
 

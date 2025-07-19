@@ -1,22 +1,4 @@
-/* Fondo principal y desenfoque solo con CSS */
-
-.desenfoque-fondo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    pointer-events: none;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    background: rgba(255,255,255,0.10);
-}
-
-
-
-
-/* Menu hamburguesa */
+/* Menu hamburguesa efecto X */
 .hamburger-bar {
     width: 30px;
     height: 4px;
@@ -37,3 +19,16 @@
     transform: translateY(-9px) rotate(-45deg);
 }
 
+/* Fondo principal y desenfoque */
+.desenfoque-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background: rgba(255,255,255,0.10);
+}
