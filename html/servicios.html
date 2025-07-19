@@ -35,146 +35,150 @@
 
 <body>
 
-    <div class="div-principal bg-[url('../media/fondo1.jpg')] bg-cover bg-center">
+    <div
+        class="relative min-h-screen bg-[url('../media/fondo1.jpg')] bg-cover bg-center grid grid-rows-[auto_1fr_auto]">
+        <div class="desenfoque-fondo"></div>
+        <div class="relative z-10 flex flex-col min-h-screen">
+            <header class="font-[Simonetta]">
 
-        <header class="font-[Simonetta]">
+                <nav class="relative bg-white shadow-md border-2 border-[#2FAED5] rounded-xl">
+                    <!-- Contenedor principal con flex siempre activo -->
+                    <div class="flex items-center justify-between px-4 md:flex-row w-full">
+                        <!-- Logo a la izquierda -->
+                        <a href="../index.html" class="flex items-center">
+                            <img src="../media/creandoLogo.png" alt="logo" class="w-20">
+                        </a>
 
-            <nav class="relative bg-white shadow-md border-2 border-[#2FAED5] rounded-xl">
-                <!-- Contenedor principal con flex siempre activo -->
-                <div class="flex items-center justify-between px-4 py-2 md:flex-row w-full" id="menu-titulo">
-                    <!-- Logo a la izquierda -->
-                    <a href="../index.html" class="flex items-center">
-                        <img src="../media/creandoLogo.png" alt="logo" class="w-20">
-                    </a>
+                        <!-- Botón del menú hamburguesa -->
+                        <button id="menu-button"
+                            class="border border-[#2FAED5] md:hidden p-2 border-2 rounded cursor-pointer focus:outline-none">
+                            <div class="hamburger-bar top"></div>
+                            <div class="hamburger-bar middle"></div>
+                            <div class="hamburger-bar bottom"></div>
+                        </button>
 
-                    <!-- Botón del menú hamburguesa -->
-                    <button id="menu-button"
-                        class="border border-[#2FAED5] md:hidden p-2 border-2 rounded cursor-pointer focus:outline-none">
-                        <div class="hamburger-bar top"></div>
-                        <div class="hamburger-bar middle"></div>
-                        <div class="hamburger-bar bottom"></div>
-                    </button>
-
-                    <!-- Menú (Flex en pantallas grandes) -->
-                    <div id="menu"
-                        class="absolute top-full right-0 w-full text-xl lg:text-2xl md:relative md:flex md:items-center md:justify-end bg-white overflow-hidden max-h-0 transition-all duration-300 ease-in-out md:max-h-full md:w-auto md:top-0 md:static">
-                        <a href="../index.html"
-                            class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Inicio</a>
-                        <a href="#"
-                            class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Servicios</a>
-                        <a href="../html/consultoria.html"
-                            class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Consultoría
-                            1:1</a>
-                        <a href="../html/conoceme.html"
-                            class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Conoceme</a>
-                        <a href="../html/contactame.html"
-                            class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Contactame</a>
+                        <!-- Menú (Flex en pantallas grandes) -->
+                        <div id="menu"
+                            class="absolute z-30 top-full right-0 w-full text-xl lg:text-2xl md:relative md:flex md:items-center md:justify-end bg-white overflow-hidden max-h-0 transition-all duration-300 ease-in-out md:max-h-full md:w-auto md:top-0 md:static">
+                            <a href="../index.html"
+                                class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Inicio</a>
+                            <a href="#"
+                                class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Servicios</a>
+                            <a href="../html/consultoria.html"
+                                class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Consultoría
+                                1:1</a>
+                            <a href="../html/conoceme.html"
+                                class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Conoceme</a>
+                            <a href="../html/contactame.html"
+                                class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Contactame</a>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
 
-        </header>
-
-        <br>
-
-        <main class="p-3 pt-0 md:px-20 lg:px-32 xl:px-44">
-
-            <h1
-                class="font-['Simonetta',_serif] text-[#495551] bg-[#FEEDAA] text-3xl p-2 font-bold text-center rounded-xl">
-                Servicios
-            </h1>
+            </header>
 
             <br>
 
+            <main class="p-3 pt-0 md:px-20 lg:px-32 xl:px-44">
 
-            <br>
+                <h1
+                    class="font-['Simonetta',_serif] text-[#495551] bg-[#FEEDAA] text-3xl p-2 font-bold text-center rounded-xl">
+                    Servicios
+                </h1>
+                <div class="relative z-10 min-h-screen flex flex-col">
+                    <br>
 
-            <div class="flex flex-wrap gap-10 justify-center">
-                <img src="../media/servicios5.png" alt="imagen creatividad" class="w-70">
 
-                <img src="../media/servicios6.png" alt="imagen espiritualidad" class="w-70">
+                    <br>
 
-                <img src="../media/servicios7.png" alt="imagen armonia" class="w-70">
-            </div>
+                    <div class="flex flex-wrap gap-10 justify-center">
+                        <img src="../media/servicios5.png" alt="imagen creatividad" class="w-70">
 
-            <br>
-            <br>
+                        <img src="../media/servicios6.png" alt="imagen espiritualidad" class="w-70">
 
-            <h2 class="text-2xl mb-2 text-center font-['Simonetta',_serif] text-white font-extrabold">
-                EL ARTE DE SER Y ESTAR
-            </h2>
+                        <img src="../media/servicios7.png" alt="imagen armonia" class="w-70">
+                    </div>
 
-            <hr>
+                    <br>
+                    <br>
 
-            <h2 class="font-['Arimo',_sans-serif] my-2 text-center font-bold text-white">
-                TALLER VIVENCIAL | WORKSHOP
-            </h2>
+                    <h2 class="text-2xl mb-2 text-center font-['Simonetta',_serif] text-white font-extrabold">
+                        EL ARTE DE SER Y ESTAR
+                    </h2>
 
-            
+                    <hr>
 
-            <div class="text-center mb-10">
-                <a href="https://api.whatsapp.com/send?phone=5491155012310" target="_blank"
-                    class="font-['Simonetta',_serif] font-semibold bg-[#FEEDAA] text-[#495551] p-2 rounded-lg">QUIERO
-                    SER PARTE</a>
-            </div>
+                    <h2 class="font-['Arimo',_sans-serif] my-2 text-center font-bold text-white">
+                        TALLER VIVENCIAL | WORKSHOP
+                    </h2>
 
-            <h2 class="text-2xl mb-2 text-center font-['Simonetta',_serif] text-white font-extrabold">
-                MI PROYECTO SENTIDO
-            </h2>
 
-            <hr>
 
-            <h2 class="font-['Arimo',_sans-serif] my-2 text-center font-bold text-white">
-                TALLER VIVENCIAL | WORKSHOP
-            </h2>
+                    <div class="text-center mb-10">
+                        <a href="https://api.whatsapp.com/send?phone=5491155012310" target="_blank"
+                            class="font-['Simonetta',_serif] font-semibold bg-[#FEEDAA] text-[#495551] p-2 rounded-lg">QUIERO
+                            SER PARTE</a>
+                    </div>
 
-            
+                    <h2 class="text-2xl mb-2 text-center font-['Simonetta',_serif] text-white font-extrabold">
+                        MI PROYECTO SENTIDO
+                    </h2>
 
-            <div class="text-center mb-10">
-                <a href="https://api.whatsapp.com/send?phone=5491155012310" target="_blank"
-                    class="bg-[#FEEDAA] text-[#495551] no-underline font-['Simonetta',_serif] p-2 rounded-lg font-semibold">QUIERO
-                    SER PARTE</a>
-            </div>
+                    <hr>
 
-            <h2 class="text-2xl mb-2 text-center font-['Simonetta',_serif] text-white font-extrabold">
-                LA MORADA DE MUJER
-            </h2>
+                    <h2 class="font-['Arimo',_sans-serif] my-2 text-center font-bold text-white">
+                        TALLER VIVENCIAL | WORKSHOP
+                    </h2>
 
-            <hr>
 
-            <h2 class="font-['Arimo',_sans-serif] my-2 text-center font-bold text-white">
-                TALLER VIVENCIAL | WORKSHOP
-            </h2>
 
-            
+                    <div class="text-center mb-10">
+                        <a href="https://api.whatsapp.com/send?phone=5491155012310" target="_blank"
+                            class="bg-[#FEEDAA] text-[#495551] no-underline font-['Simonetta',_serif] p-2 rounded-lg font-semibold">QUIERO
+                            SER PARTE</a>
+                    </div>
 
-            <div class="text-center mb-10">
-                <a href="https://api.whatsapp.com/send?phone=5491155012310" target="_blank"
-                    class="bg-[#FEEDAA] text-[#495551] no-underline font-['Simonetta',_serif] p-2 rounded-lg font-semibold">QUIERO
-                    SER PARTE</a>
-            </div>
+                    <h2 class="text-2xl mb-2 text-center font-['Simonetta',_serif] text-white font-extrabold">
+                        LA MORADA DE MUJER
+                    </h2>
 
-            <p class="text-center font-['Arimo',_sans-serif] italic text-white">
-                Si te gustaría participar de mis talleres u organizar un taller en tu escuela o en tu espacio, no dudes en escribirme.
-                <br>
-                Estoy aquí
-                para conversar sobre las posibilidades y hacer que sea una experiencia enriquecedora para todos/as.
-                <br>
-                <strong>¡ESPERO TU MENSAJE!</strong>
+                    <hr>
 
-            </p>
+                    <h2 class="font-['Arimo',_sans-serif] my-2 text-center font-bold text-white">
+                        TALLER VIVENCIAL | WORKSHOP
+                    </h2>
 
-        </main>
 
-        
-    <footer class="text-center py-2 border-2 border-[#2FAED5] rounded-xl bg-white">
-        <p class="font-semibold font-['Simonetta',_serif] text-[#495551]">
-            Copyright &#169; Jessi Carmona (2025) | Fotografías Diego Lapiz |
-            Desarrollado por <a href="https://pablomgdev.netlify.app/" target="_blank" rel="noopener noreferrer"
-                class="hover:text-black">Pablo MG.</a>
-        </p>
-    </footer>
 
+                    <div class="text-center mb-10">
+                        <a href="https://api.whatsapp.com/send?phone=5491155012310" target="_blank"
+                            class="bg-[#FEEDAA] text-[#495551] no-underline font-['Simonetta',_serif] p-2 rounded-lg font-semibold">QUIERO
+                            SER PARTE</a>
+                    </div>
+
+                    <p class="text-center font-['Arimo',_sans-serif] italic text-white">
+                        Si te gustaría participar de mis talleres u organizar un taller en tu escuela o en tu espacio,
+                        no
+                        dudes en escribirme.
+                        <br>
+                        Estoy aquí
+                        para conversar sobre las posibilidades y hacer que sea una experiencia enriquecedora para
+                        todos/as.
+                        <br>
+                        <strong>¡ESPERO TU MENSAJE!</strong>
+
+                    </p>
+
+            </main>
+
+            <footer class="text-center py-2 border-2 border-[#2FAED5] rounded-xl bg-white">
+                <p class="font-semibold font-['Simonetta',_serif] text-[#495551]">
+                    Copyright &#169; Jessi Carmona (2025) | Fotografías Diego Lapiz |
+                    Desarrollado por <a href="https://pablomgdev.netlify.app/" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-black">Pablo MG.</a>
+                </p>
+            </footer>
+        </div>
     </div>
 
     <script src="../menu-hamburguesa.js"></script>

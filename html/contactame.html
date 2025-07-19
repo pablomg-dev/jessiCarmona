@@ -36,11 +36,13 @@
 <body>
 
 
-    <div class="div-principal bg-[url('../media/fondo1.jpg')] bg-cover bg-center">
+    <div class="relative min-h-screen bg-[url('../media/fondo1.jpg')] bg-cover bg-center grid grid-rows-[auto_1fr_auto]">
+        <div class="desenfoque-fondo"></div>
+        <div class="relative z-10 flex flex-col min-h-screen">
         <header class="font-[Simonetta]">
             <nav class="relative bg-white shadow-md border-2 border-[#2FAED5] rounded-xl">
                 <!-- Contenedor principal con flex siempre activo -->
-                <div class="flex items-center justify-between px-4 py-2 md:flex-row w-full" id="menu-titulo">
+                <div class="flex items-center justify-between px-4 md:flex-row w-full">
                     <!-- Logo a la izquierda -->
                     <a href="../index.html" class="flex items-center">
                         <img src="../media/creandoLogo.png" alt="logo" class="w-20">
@@ -163,15 +165,14 @@
             <br>
 
         </main>
-    </div>
-
-    <footer class="text-center py-2 border-2 border-[#2FAED5] rounded-xl">
-        <p class="font-semibold font-['Simonetta',_serif] text-[#495551]">
-            Copyright &#169; Jessi Carmona (2025) | Fotografías Diego Lapiz |
-            Desarrollado por <a href="https://pablomgdev.netlify.app/" target="_blank" rel="noopener noreferrer"
-                class="hover:text-black">Pablo MG.</a>
-        </p>
-    </footer>
+        <footer class="text-center py-2 border-2 border-[#2FAED5] rounded-xl bg-white">
+            <p class="font-semibold font-['Simonetta',_serif] text-[#495551]">
+                Copyright &#169; Jessi Carmona (2025) | Fotografías Diego Lapiz |
+                Desarrollado por <a href="https://pablomgdev.netlify.app/" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-black">Pablo MG.</a>
+            </p>
+        </footer>
+        </div>
 
     <script src="../menu-hamburguesa.js"></script>
 </body>

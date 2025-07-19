@@ -36,148 +36,153 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-    <body>
-    <div class="fixed inset-0 flex items-center justify-center bg-white z-50">
-      <h1 class="text-4xl md:text-6xl font-bold text-[#2FAED5] text-center font-[Simonetta]">
-        Página en renovación<br>
-        ¡Volvemos pronto!
-      </h1>
-    </div>
+<body>
+
     <div class="fixed inset-0 flex flex-col items-center justify-center bg-white z-50">
-      <img src="./media/creandoLogo.png" alt="logo Creando Armonía" class="w-40 mb-6 opacity-80 select-none pointer-events-none">
-      <h1 class="text-4xl md:text-6xl font-bold text-[#2FAED5] text-center">
-        Página en renovación<br>
-        ¡Volvemos pronto!
-      </h1>
+        <img src="./media/creandoLogo.png" alt="logo Creando Armonía"
+            class="w-40 mb-6 opacity-80 select-none pointer-events-none">
+        <h1 class="text-4xl md:text-6xl font-bold text-[#2FAED5] text-center">
+            Página en renovación<br>
+            ¡Volvemos pronto!
+        </h1>
     </div>
 
-    <div class="div-principal">
+    <div class="relative min-h-screen bg-[url('./media/fondo1.jpg')] bg-cover bg-center grid grid-rows-[auto_1fr_auto]">
         <div class="desenfoque-fondo"></div>
-        <div class="contenido-principal">
+        <div class="relative z-10 min-h-screen flex flex-col">
 
-        <header class="font-[Simonetta]">
+            <header class="font-[Simonetta]">
 
-            <nav class="relative bg-white shadow-md border-2 border-[#2FAED5] rounded-xl">
-                <!-- Contenedor principal con flex siempre activo -->
-                <div class="flex items-center justify-between px-4 md:flex-row w-full" id="menu-titulo">
-                    <!-- Logo a la izquierda -->
-                    <a href="#" class="flex items-center">
-                        <img src="./media/creandoLogo.png" alt="logo" class="w-26">
-                    </a>
-
-                    <!-- Botón del menú hamburguesa -->
-                    <button id="menu-button"
-                        class="border border-[#2FAED5] md:hidden p-2 border-2 rounded cursor-pointer focus:outline-none">
-                        <div class="hamburger-bar top"></div>
-                        <div class="hamburger-bar middle"></div>
-                        <div class="hamburger-bar bottom"></div>
-                    </button>
-
-                    <!-- Menú (Flex en pantallas grandes) -->
-                    <div id="menu"
-                        class="absolute z-20 top-full right-0 w-full text-xl lg:text-2xl md:relative md:flex md:items-center md:justify-end bg-white overflow-hidden max-h-0 transition-all duration-300 ease-in-out md:max-h-full md:w-auto md:top-0 md:static">
-                        <a href="#"
-                            class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Inicio</a>
-                        <a href="./html/servicios.html"
-                            class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Servicios</a>
-                        <a href="./html/consultoria.html"
-                            class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Consultoría
-                            1:1</a>
-                        <a href="./html/conoceme.html"
-                            class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Conoceme</a>
-                        <a href="./html/contactame.html"
-                            class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Contactame</a>
-                    </div>
-                </div>
-            </nav>
-
-        </header>
-
-        <br>
-
-        <main>
-
-            <div class="contenedor-home">
-                <div class="home-hero">
-
-                    <h1
-                        class="text-[#495551] font-['Simonetta',_serif] text-base font-bold text-left mb-4 pl-6 md:pl-14 lg:pl-24 xl:pl-54 sombra-texto">
-                        "EL VIAJE MÁS LARGO <br> COMIENZA CON <br> UN PRIMER PASO"
-                    </h1>
-                    <div class="w-full text-left pl-3 md:pl-14 lg:pl-24 xl:pl-54">
-                        <a href="./html/consultoria.html" id="quiero-empezar" class="btn-quiero-empezar">
-                            QUIERO EMPEZAR
+                <nav class="relative bg-white shadow-md border-2 border-[#2FAED5] rounded-xl">
+                    <!-- Contenedor principal con flex siempre activo -->
+                    <div class="flex items-center justify-between px-4 md:flex-row w-full">
+                        <!-- Logo a la izquierda -->
+                        <a href="#" class="flex items-center">
+                            <img src="./media/creandoLogo.png" alt="logo" class="w-20">
                         </a>
+
+                        <!-- Botón del menú hamburguesa -->
+                        <button id="menu-button"
+                            class="border border-[#2FAED5] md:hidden p-2 border-2 rounded cursor-pointer focus:outline-none">
+                            <div class="hamburger-bar top"></div>
+                            <div class="hamburger-bar middle"></div>
+                            <div class="hamburger-bar bottom"></div>
+                        </button>
+
+                        <!-- Menú (Flex en pantallas grandes) -->
+                        <div id="menu"
+                            class="absolute z-20 top-full right-0 w-full text-xl lg:text-2xl md:relative md:flex md:items-center md:justify-end bg-white overflow-hidden max-h-0 transition-all duration-300 ease-in-out md:max-h-full md:w-auto md:top-0 md:static">
+                            <a href="#"
+                                class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Inicio</a>
+                            <a href="./html/servicios.html"
+                                class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Servicios</a>
+                            <a href="./html/consultoria.html"
+                                class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Consultoría
+                                1:1</a>
+                            <a href="./html/conoceme.html"
+                                class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Conoceme</a>
+                            <a href="./html/contactame.html"
+                                class="block font-bold text-center p-2 menu-items hover:text-[#2FAED5] md:px-4">Contactame</a>
+                        </div>
+                    </div>
+                </nav>
+
+            </header>
+
+            <br>
+
+            <main>
+
+                <div class="p-4 pb-0 max-w-[1200px] mx-auto">
+                    <div
+                        class="relative min-h-[60vh] flex flex-col justify-start text-white pt-4 mb-8 w-full overflow-hidden px-6 rounded-2xl bg-white">
+                        <div class="absolute inset-0 w-full h-full bg-[url('./media/home1.jpg')] bg-contain bg-no-repeat bg-center rounded-2xl z-0"></div>
+                        <div class="relative z-10">
+
+                            <h1
+                                class="text-[#495551] font-['Simonetta',_serif] text-base font-bold text-left mb-4 sombra-texto">
+                                "EL VIAJE MÁS LARGO <br> COMIENZA CON <br> UN PRIMER PASO"
+                            </h1>
+                            <div class="w-full text-left">
+                                <a href="./html/consultoria.html"
+                                    class="font-['Simonetta',_serif] font-semibold bg-[#FEEDAA] text-[#495551] px-4 py-2 rounded-xl inline-block text-base shadow transition hover:bg-[#ffe070] hover:scale-105">
+                                    QUIERO EMPEZAR
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="flex flex-col items-center justify-center p-3 pt-0 md:px-20 lg:px-32 xl:px-44">
+                <div class="flex flex-col items-center justify-center p-3 pt-0 md:px-20 lg:px-32 xl:px-44">
 
-                <h2
-                    class="text-3xl mb-3 p-2 pt-0 text-center font-['Simonetta',_serif] text-[#495551] bg-[#FEEDAA] font-bold rounded-xl">
-                    CreAndo Armonia ComUnidad
+                    <h2
+                        class="text-3xl mb-3 p-2 pt-0 text-center font-['Simonetta',_serif] text-[#495551] bg-[#FEEDAA] font-bold rounded-xl">
+                        CreAndo Armonia ComUnidad
 
-                </h2>
+                    </h2>
 
-                <h2
-                    class="text-xl lg:text-2xl mb-3 p-2 text-center font-['Simonetta',_serif] text-white font-extrabold rounded-xl">
-                    Desarrollando el potencial interior a través de la Espiritualidad, la Sanación y el despertar de la Creatividad
-                </h2>
-                <br>
-                <p class="mb-3 text-center lg:text-lg font-['Arimo',_sans-serif'] text-white font-bold">
-                    Mi desempeño como <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Acompañante
-                        Terapéutica
-                        <i class="fas fa-hand-holding-heart ml-2 text-2xl"></i></span><br>
-                    <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Meditadora <i
-                            class="fas fa-seedling ml-2 text-2xl"></i></span><br>
-                    <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Profesora de Yoga <i
-                            class="fas fa-solid fa-om ml-2 text-2xl"></i></span><br>
-                    ha sido el puente para abrir los caminos hacia mi propio desarrollo evolutivo personal y creativo.
-                    Es un
-                    desafío, aprendizaje y transformación constante en el Ser y en el Hacer, en la habilidad de
-                    compartir, acompañar y guiar a otros en el proceso de <span
-                        class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">expansión de consciencia <i
-                            class="fas fa-brain ml-2 text-2xl"></i></span> y en los aspectos que nos hacen crecer,
-                    recordando que todos somos <span
-                        class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Uno<i
-                            class="fas fa-globe-americas ml-2 text-2xl"></i></span>
-                    <br><br>
-                    Mi enfoque se centra en ayudarte a reconectar con tu potencial interior, fortalezas y
-                    creatividad. Explorándote a través de <span
-                        class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">herramientas prácticas para
-                        el autoconocimiento</span> de ayer, hoy y mañana,
-                    permitiendo descubrir una versión mas esencial de vos mismo/a y un bienestar <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">integral <i
-                            class="fas fa-spa ml-2 text-2xl"></i></span>
-                    <br><br>
-                    <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Crear Armonía en la Vida
-                    </span> es un objetivo valioso y necesario en estos
-                    tiempos <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">¡Unite!</span>
+                    <h2
+                        class="text-xl lg:text-2xl mb-3 p-2 text-center font-['Simonetta',_serif] text-white font-extrabold rounded-xl">
+                        Desarrollando el potencial interior a través de la Espiritualidad, la Sanación y el despertar de
+                        la Creatividad
+                    </h2>
+                    <br>
+                    <p class="mb-3 text-center lg:text-lg font-['Arimo',_sans-serif'] text-white font-bold">
+                        Mi desempeño como <span
+                            class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Acompañante
+                            Terapéutica
+                            <i class="fas fa-hand-holding-heart ml-2 text-2xl"></i></span><br>
+                        <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Meditadora <i
+                                class="fas fa-seedling ml-2 text-2xl"></i></span><br>
+                        <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Profesora de Yoga <i
+                                class="fas fa-solid fa-om ml-2 text-2xl"></i></span><br>
+                        ha sido el puente para abrir los caminos hacia mi propio desarrollo evolutivo personal y
+                        creativo.
+                        Es un
+                        desafío, aprendizaje y transformación constante en el Ser y en el Hacer, en la habilidad de
+                        compartir, acompañar y guiar a otros en el proceso de <span
+                            class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">expansión de consciencia
+                            <i class="fas fa-brain ml-2 text-2xl"></i></span> y en los aspectos que nos hacen crecer,
+                        recordando que todos somos <span
+                            class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Uno<i
+                                class="fas fa-globe-americas ml-2 text-2xl"></i></span>
+                        <br><br>
+                        Mi enfoque se centra en ayudarte a reconectar con tu potencial interior, fortalezas y
+                        creatividad. Explorándote a través de <span
+                            class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">herramientas prácticas
+                            para
+                            el autoconocimiento</span> de ayer, hoy y mañana,
+                        permitiendo descubrir una versión mas esencial de vos mismo/a y un bienestar <span
+                            class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">integral <i
+                                class="fas fa-spa ml-2 text-2xl"></i></span>
+                        <br><br>
+                        <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Crear Armonía en la Vida
+                        </span> es un objetivo valioso y necesario en estos
+                        tiempos <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">¡Unite!</span>
+                    </p>
+
+                    <br>
+
+
+
+                </div>
+
+
+            </main>
+
+            <footer class="text-center py-2 border-2 border-[#2FAED5] rounded-xl bg-white">
+                <p class="font-semibold font-['Simonetta',_serif] text-[#495551] rounded-xl">
+                    Copyright &#169; Jessi Carmona (2025) | Fotografías Diego Lapiz |
+                    Desarrollado por <a href="https://pablomgdev.netlify.app/" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-black">Pablo MG.</a>
                 </p>
-
-                <br>
-
-                
-
-            </div>
-
-            
-        </main>
-
-        <footer class="text-center py-2 border-2 border-[#2FAED5] rounded-xl bg-white">
-            <p class="font-semibold font-['Simonetta',_serif] text-[#495551] rounded-xl">
-                Copyright &#169; Jessi Carmona (2025) | Fotografías Diego Lapiz |
-                Desarrollado por <a href="https://pablomgdev.netlify.app/" target="_blank" rel="noopener noreferrer"
-                    class="hover:text-black">Pablo MG.</a>
-            </p>
-        </footer>
+            </footer>
 
         </div>
-        </div>
+    </div>
     </div>
 
     <script src="./menu-hamburguesa.js"></script>
-    <script src="./carousel-home.js"></script>
 
 </body>
 
