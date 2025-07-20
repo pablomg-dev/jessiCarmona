@@ -38,14 +38,14 @@
 
 <body>
 
-    <!-- <div class="fixed inset-0 flex flex-col items-center justify-center bg-white z-50">
+    <div class="fixed inset-0 flex flex-col items-center justify-center bg-white z-50">
         <img src="./media/creandoLogo.png" alt="logo Creando Armonía"
             class="w-40 mb-6 opacity-80 select-none pointer-events-none">
         <h1 class="text-4xl md:text-6xl font-bold text-[#2FAED5] text-center">
             Página en renovación<br>
             ¡Volvemos pronto!
         </h1>
-    </div> -->
+    </div>
 
     <div class="relative min-h-screen bg-[url('./media/fondo1.jpg')] bg-cover bg-center grid grid-rows-[auto_1fr_auto]">
         <div class="desenfoque-fondo"></div>
@@ -190,12 +190,12 @@
                     <form name="newsletter" method="POST" netlify class="w-full max-w-md mx-auto bg-white/80 rounded-2xl shadow p-6 flex flex-col gap-4 mt-6" autocomplete="off">
                         <input type="hidden" name="form-name" value="newsletter">
                         <!-- <h3 class="text-xl font-bold text-[#495551] font-['Simonetta',_serif] mb-2 text-center">Suscribite al Newsletter</h3> -->
-                        <input type="text" name="nombre" placeholder="Nombre" required
+                        <input type="text" name="nombre" placeholder="Nombre" required autocomplete="name"
                             class="px-4 py-2 rounded-lg border border-[#2FAED5] focus:outline-none focus:ring-2 focus:ring-[#2FAED5] font-['Arimo',_sans-serif]">
-                        <input type="email" name="email" placeholder="Email" required
+                        <input type="email" name="email" placeholder="Email" required autocomplete="email"
                             class="px-4 py-2 rounded-lg border border-[#2FAED5] focus:outline-none focus:ring-2 focus:ring-[#2FAED5] font-['Arimo',_sans-serif]">
                         <button type="submit"
-                            class="bg-[#2FAED5] text-white font-bold py-2 rounded-lg transition hover:bg-[#1992b3] font-['Simonetta',_serif] cursor-pointer">Suscribirme</button>
+                            class="bg-[#2FAED5] text-white font-bold py-2 rounded-lg transition hover:bg-[#1992b3] font-['Arimo',_sans-serif] cursor-pointer">Suscribirme</button>
                     </form>
 
                 </div>
@@ -215,7 +215,9 @@
     </div>
     </div>
 
+
     <script src="./js/menu-hamburguesa.js"></script>
+    <script src="./js/newsletter-popup.js"></script>
 
 </body>
 
