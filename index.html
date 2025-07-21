@@ -38,14 +38,14 @@
 
 <body>
 
-    <div class="fixed inset-0 flex flex-col items-center justify-center bg-white z-50">
+    <!-- <div class="fixed inset-0 flex flex-col items-center justify-center bg-white z-50">
         <img src="./media/creandoLogo.png" alt="logo Creando Armonía"
             class="w-40 mb-6 opacity-80 select-none pointer-events-none">
         <h1 class="text-4xl md:text-6xl font-bold text-[#2FAED5] text-center">
             Página en renovación<br>
             ¡Volvemos pronto!
         </h1>
-    </div>
+    </div> -->
 
     <div class="relative min-h-screen bg-[url('./media/fondo1.jpg')] bg-cover bg-center grid grid-rows-[auto_1fr_auto]">
         <div class="desenfoque-fondo"></div>
@@ -152,48 +152,73 @@
                         <br><br>
                         <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Crear Armonía en la Vida
                         </span> es un objetivo valioso y necesario en estos
-                        tiempos <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">¡Unite!</span>
+                        tiempos.
                     </p>
 
-                    <p class="text-xl lg:text-2xl mb-3 p-2 text-center font-['Simonetta',_serif] text-white font-extrabold rounded-xl">
-                        Bienvenidos/as a nuestra ComUnidad
-                    </p>
+                    <h2
+                        class="text-3xl mb-5 p-2 text-center font-['Simonetta',_serif] text-[#495551] bg-[#FEEDAA] font-bold rounded-xl">
+                        ¡Unite con Nosotros!
+                    </h2>
 
-                    <p class="mb-6 text-center lg:text-lg font-['Arimo',_sans-serif] text-white font-bold">
-                        Somos un espacio colaborativo para quienes compartimos el camino en diferentes momentos y
-                        formas, acompañándonos mutuamente en nuestro proceso de crecimiento y bienestar.
-                        <br>
-                        <br>
-                        Aquí encontrarás información y novedades sobre:
-                        <br>
-                        <br>
-                        Encuentros grupales
-                        <br>
-                        Sesiones individuales
-                        <br>
-                        Reflexiones
-                        <br>
-                        Novedades
-                        <br>
-                        Actividades gratuitas
-                        <br>
-                        ¡Y mucho más!
-                        <br>
-                        <br>
-                        Además, promovemos Viajes Culturales a India enmarcados en nuestro proyecto de exploración y
-                        aprendizajes constantes.
-                        Suscribite aqui y forma parte.
+                    <div class="text-center text-center lg:text-lg font-['Arimo',_sans-serif] text-white font-bold">
+                        <p class="mb-6">
+                            Somos un espacio colaborativo para quienes compartimos el camino en diferentes momentos y
+                            formas, acompañándonos mutuamente en nuestro proceso de crecimiento y bienestar.
+                        </p>
 
-                    </p>
+                        <h3 class="mb-3">
+                            Aqui recibirás informacion sobre:
+                        </h3>
 
-                    <!-- Newsletter Formulario -->
-                    <form name="newsletter" method="POST" netlify class="w-full max-w-md mx-auto bg-white/80 rounded-2xl shadow p-6 flex flex-col gap-4 mt-6" autocomplete="off">
+                        <ul class="text-[#FEEDAA] mb-4 font-extrabold">
+                            <li>
+                                Encuentros grupales
+                            </li>
+
+                            <li>
+                                Sesiones individuales
+                            </li>
+
+                            <li>
+                                Reflexiones
+                            </li>
+
+                            <li>
+                                Novedades
+                            </li>
+
+                            <li>
+                                Actividades Gratuitas
+                            </li>
+
+                            <li>
+                                ¡Y mucho más!
+                            </li>
+                        </ul>
+
+                        <p>
+                            Además, promovemos Viajes Culturales a India enmarcados en nuestro proyecto de exploración y
+                            aprendizajes constantes.
+                            Suscribite aqui y forma parte.
+                        </p>
+                    </div>
+
+                    <!-- Formulario del Newsletter -->
+                    <form name="newsletter" method="POST" netlify
+                        class="w-full max-w-md mx-auto bg-white/80 rounded-2xl shadow p-6 flex flex-col gap-4 mt-6"
+                        autocomplete="off">
+
                         <input type="hidden" name="form-name" value="newsletter">
-                        <!-- <h3 class="text-xl font-bold text-[#495551] font-['Simonetta',_serif] mb-2 text-center">Suscribite al Newsletter</h3> -->
+
                         <input type="text" name="nombre" placeholder="Nombre" required autocomplete="name"
                             class="px-4 py-2 rounded-lg border border-[#2FAED5] focus:outline-none focus:ring-2 focus:ring-[#2FAED5] font-['Arimo',_sans-serif]">
+
+                        <input type="text" name="pais_ciudad" placeholder="País / Ciudad" required autocomplete="address-level2"
+                            class="px-4 py-2 rounded-lg border border-[#2FAED5] focus:outline-none focus:ring-2 focus:ring-[#2FAED5] font-['Arimo',_sans-serif]">
+
                         <input type="email" name="email" placeholder="Email" required autocomplete="email"
                             class="px-4 py-2 rounded-lg border border-[#2FAED5] focus:outline-none focus:ring-2 focus:ring-[#2FAED5] font-['Arimo',_sans-serif]">
+                            
                         <button type="submit"
                             class="bg-[#2FAED5] text-white font-bold py-2 rounded-lg transition hover:bg-[#1992b3] font-['Arimo',_sans-serif] cursor-pointer">Suscribirme</button>
                     </form>
