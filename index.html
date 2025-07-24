@@ -26,11 +26,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Alice&family=Arimo:ital,wght@0,400..700;1,400..700&family=Simonetta&display=swap"
-        rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -38,20 +34,20 @@
 
 <body>
 
-    <div class="fixed inset-0 flex flex-col items-center justify-center bg-white z-50">
+    <!-- <div class="fixed inset-0 flex flex-col items-center justify-center bg-white z-50">
         <img src="./media/creandoLogo.png" alt="logo Creando Armonía"
             class="w-40 mb-6 opacity-80 select-none pointer-events-none">
         <h1 class="text-4xl md:text-6xl font-bold text-[#2FAED5] text-center">
             Página en renovación<br>
             ¡Volvemos pronto!
         </h1>
-    </div>
+    </div> -->
 
     <div class="relative min-h-screen bg-[url('./media/fondo1.jpg')] bg-cover bg-center grid grid-rows-[auto_1fr_auto]">
         <div class="desenfoque-fondo"></div>
         <div class="relative z-10 min-h-screen flex flex-col">
 
-            <header class="font-[Simonetta]">
+            <header class="font-simonetta">
 
                 <nav class="relative bg-white shadow-md border-2 border-[#2FAED5] rounded-xl">
                     <!-- Contenedor principal con flex siempre activo -->
@@ -99,7 +95,7 @@
 
                     <div class="absolute top-0 left-0 p-6 flex flex-col items-start">
                         <span
-                            class="text-[#495551] font-['Simonetta',_serif] text-sm sm:text-lg md:text-2xl font-bold mb-3 rounded-xl px-4 py-2">"EL
+                            class="text-[#495551] font-simonetta text-sm sm:text-lg md:text-2xl font-bold mb-3 rounded-xl px-4 py-2">"EL
                             VIAJE MÁS LARGO <br> COMIENZA CON <br> UN PRIMER PASO"</span>
 
                         <!-- <div class="text-sm">
@@ -111,7 +107,7 @@
 
                         <div class="text-center">
                             <a href="./pages/consultoria.html"
-                                class="font-['Simonetta',_serif] font-semibold bg-[#FEEDAA] text-sm sm:text-lg md:text-2xl text-[#495551] p-2 rounded-lg inline-block shadow transition hover:bg-[#ffe070] hover:scale-105">QUIERO
+                                class="font-simonetta font-semibold bg-[#FEEDAA] text-sm sm:text-lg md:text-2xl text-[#495551] p-1 rounded-lg inline-block shadow transition hover:bg-[#ffe070] hover:scale-105">QUIERO
                                 SER PARTE</a>
                         </div>
 
@@ -121,18 +117,18 @@
                 <div class="flex flex-col items-center justify-center">
 
                     <h2
-                        class="text-3xl mb-3 p-2 pt-0 text-center font-['Simonetta',_serif] text-[#495551] bg-[#FEEDAA] font-bold rounded-xl">
+                        class="text-3xl mb-3 p-2 pt-0 text-center font-simonetta text-[#495551] bg-[#FEEDAA] font-bold rounded-xl">
                         CreAndo Armonia ComUnidad
 
                     </h2>
 
                     <h2
-                        class="text-xl lg:text-2xl mb-3 p-2 text-center font-['Simonetta',_serif] text-white font-extrabold rounded-xl">
+                        class="text-xl lg:text-2xl mb-3 p-2 text-center font-simonetta text-white font-extrabold rounded-xl">
                         Desarrollando el potencial interior a través de la Espiritualidad, la Sanación y el despertar de
                         la Creatividad
                     </h2>
 
-                    <p class="mb-8 text-center lg:text-lg font-['Arimo',_sans-serif] text-white font-bold">
+                    <p class="mb-8 text-center lg:text-lg font-arimo text-white font-bold">
                         Mi desempeño como <span
                             class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Acompañante
                             Terapéutica
@@ -167,11 +163,11 @@
                     </p>
 
                     <h2
-                        class="text-3xl mb-5 p-2 text-center font-['Simonetta',_serif] text-[#495551] bg-[#FEEDAA] font-bold rounded-xl">
+                        class="text-3xl mb-5 p-2 text-center font-simonetta text-[#495551] bg-[#FEEDAA] font-bold rounded-xl">
                         ¡Unite con Nosotros!
                     </h2>
 
-                    <div class="text-center text-center lg:text-lg font-['Arimo',_sans-serif] text-white font-bold">
+                    <div class="text-center text-center lg:text-lg font-arimo text-white font-bold">
                         <p class="mb-6">
                             Somos un espacio colaborativo para quienes compartimos el camino en diferentes momentos y
                             formas, acompañándonos mutuamente en nuestro proceso de crecimiento y bienestar.
@@ -222,17 +218,17 @@
                         <input type="hidden" name="form-name" value="newsletter">
 
                         <input type="text" name="nombre" placeholder="Nombre" required autocomplete="name"
-                            class="px-4 py-2 rounded-lg border border-[#2FAED5] focus:outline-none focus:ring-2 focus:ring-[#2FAED5] font-['Arimo',_sans-serif]">
+                            class="px-4 py-2 rounded-lg border border-[#2FAED5] focus:outline-none focus:ring-2 focus:ring-[#2FAED5] font-arimo">
 
                         <input type="text" name="pais_ciudad" placeholder="País / Ciudad" required
                             autocomplete="address-level2"
-                            class="px-4 py-2 rounded-lg border border-[#2FAED5] focus:outline-none focus:ring-2 focus:ring-[#2FAED5] font-['Arimo',_sans-serif]">
+                            class="px-4 py-2 rounded-lg border border-[#2FAED5] focus:outline-none focus:ring-2 focus:ring-[#2FAED5] font-arimo">
 
                         <input type="email" name="email" placeholder="Email" required autocomplete="email"
-                            class="px-4 py-2 rounded-lg border border-[#2FAED5] focus:outline-none focus:ring-2 focus:ring-[#2FAED5] font-['Arimo',_sans-serif]">
+                            class="px-4 py-2 rounded-lg border border-[#2FAED5] focus:outline-none focus:ring-2 focus:ring-[#2FAED5] font-arimo">
 
                         <button type="submit"
-                            class="bg-[#2FAED5] text-white font-bold py-2 rounded-lg transition hover:bg-[#1992b3] font-['Arimo',_sans-serif] cursor-pointer">Suscribirme</button>
+                            class="bg-[#2FAED5] text-white font-bold py-2 rounded-lg transition hover:bg-[#1992b3] font-arimo cursor-pointer">Suscribirme</button>
                     </form>
 
                 </div>
@@ -241,7 +237,7 @@
             </main>
 
             <footer class="text-center py-2 border-2 border-[#2FAED5] rounded-xl bg-white">
-                <p class="font-semibold font-['Simonetta',_serif] text-[#495551] rounded-xl">
+                <p class="font-semibold font-simonetta text-[#495551] rounded-xl">
                     Copyright &#169; Jessi Carmona (2025) | Fotografías Diego Lapiz |
                     Desarrollado por <a href="https://pablomgdev.netlify.app/" target="_blank" rel="noopener noreferrer"
                         class="hover:text-black">Pablo MG.</a>
