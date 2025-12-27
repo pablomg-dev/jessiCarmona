@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <!-- Google Fonts -->
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -34,22 +34,22 @@
 
 <body>
 
-    <!-- <div class="fixed inset-0 flex flex-col items-center justify-center bg-white z-50">
+    <div class="fixed inset-0 flex flex-col items-center justify-center bg-white z-50">
         <img src="./media/creandoLogo.png" alt="logo Creando Armonía"
             class="w-40 mb-6 opacity-80 select-none pointer-events-none">
         <h1 class="text-4xl md:text-6xl font-bold text-[#2FAED5] text-center">
             Página en renovación<br>
             ¡Volvemos pronto!
         </h1>
-    </div> -->
+    </div>
 
-    <div class="relative min-h-screen bg-[url('./media/fondo1.jpg')] bg-cover bg-center grid grid-rows-[auto_1fr_auto]">
-        <div class="desenfoque-fondo"></div>
+    <div class="relative min-h-screen grid grid-rows-[auto_1fr_auto]">
+
         <div class="relative z-10 min-h-screen flex flex-col">
 
             <header class="font-simonetta">
 
-                <nav class="relative bg-white shadow-md border-2 border-[#2FAED5] rounded-xl">
+                <nav class="relative bg-white shadow-md border-2 border-[#f4e0a3] rounded-xl">
                     <!-- Contenedor principal con flex siempre activo -->
                     <div class="flex items-center justify-between px-4 md:flex-row w-full">
                         <!-- Logo a la izquierda -->
@@ -59,7 +59,7 @@
 
                         <!-- Botón del menú hamburguesa -->
                         <button id="menu-button"
-                            class="border border-[#2FAED5] md:hidden p-2 border-2 rounded cursor-pointer focus:outline-none">
+                            class="border border-[#f4e0a3] md:hidden p-2 border-2 rounded cursor-pointer focus:outline-none">
                             <div class="hamburger-bar top"></div>
                             <div class="hamburger-bar middle"></div>
                             <div class="hamburger-bar bottom"></div>
@@ -89,139 +89,95 @@
 
             <main class="p-3 pt-0 md:px-20 lg:px-32 xl:px-44">
 
-                <div class="relative mx-auto lg:w-2/3 rounded-xl mb-5 bg-white overflow-hidden">
+                <div class="relative mx-auto lg:w-2/3 mb-5 overflow-hidden">
 
-                    <img src="./media/home1.jpg" alt="jessi carmona foto" class="w-full h-auto rounded-xl">
-
-                    <div class="absolute top-0 left-0 w-full p-6 flex flex-col items-start">
-                        <span
-                            class="text-[#495551] font-simonetta text-sm sm:text-lg md:text-2xl font-bold mb-3 rounded-xl px-4 py-2 text-center">"EL
-                            VIAJE MÁS LARGO <br> COMIENZA CON <br> UN PRIMER PASO"</span>
-
-                        <span class="ml-4">
-                            <a href="./pages/consultoria.html"
-                                class="font-simonetta font-semibold bg-[#FEEDAA] text-xs sm:text-lg md:text-2xl text-[#843179] p-1 rounded-lg inline-block shadow transition hover:bg-[#ffe070] hover:scale-105">QUIERO
-                                SER PARTE</a>
-                        </span>
-
+                    <div class="bg-[#f4e0a3] px-4 py-5 font-simonetta">
+                        <div class="w-12 h-1.5 bg-[#613659] mb-3" aria-hidden="true"></div>
+                        <h1 class="text-lg sm:text-xl md:text-2xl font-bold">UN ESPACIO PARA VOLVER A VOS</h1>
+                        <h2 class="ext-lg sm:text-xl md:text-2xl font-bold">RECONECTAR CON TU POTENCIAL INTERIOR</h2>
+                        <h3 class="ext-lg sm:text-xl md:text-2xl font-bold">Y VIVIR ALINEAD@ CON TU VERDAD</h3>
+                        <p class="ext-lg sm:text-xl md:text-2xl font-bold">Comunidad CreANDO ARMONIA</p>
+                        <a href="./pages/servicios.html"
+                            class="inline-block rounded-lg bg-[#613659] text-white py-2 px-5 font-extrabold tracking-wider uppercase mt-4">QUIERO
+                            UNIRME</a>
                     </div>
+
+                    <img src="./media/home1.jpg" alt="jessi carmona foto" class="w-full h-auto">
+
                 </div>
 
                 <div class="flex flex-col items-center justify-center">
 
                     <h2
-                        class="text-3xl mb-3 p-2 pt-0 text-center font-simonetta text-[#843179] bg-[#FEEDAA] font-bold rounded-xl">
-                        CreAndo Armonia ComUnidad
-
+                        class="text-xl text-white mb-3 p-2 pt-0 text-center font-simonetta bg-[#613659] font-bold rounded-xl">
+                        ​¿QUÉ TENGO PARA OFRECERTE?
                     </h2>
 
-                    <h2
-                        class="text-xl lg:text-2xl mb-3 p-2 text-center font-simonetta text-white font-extrabold rounded-xl">
-                        Desarrollando el potencial interior a través de la Espiritualidad, la Sanación y el despertar de
-                        la Creatividad
-                    </h2>
 
-                    <p class="mb-8 text-center lg:text-lg font-arimo text-white font-bold">
-                        Mi desempeño como <span
-                            class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Acompañante
-                            Terapéutica
-                            <i class="fas fa-hand-holding-heart ml-2 text-2xl"></i></span><br>
-                        <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Meditadora <i
-                                class="fas fa-seedling ml-2 text-2xl"></i></span><br>
-                        <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Profesora de Yoga <i
-                                class="fas fa-solid fa-om ml-2 text-2xl"></i></span><br>
-                        ha sido el puente para abrir los caminos hacia mi propio desarrollo evolutivo personal y
-                        creativo.
-                        Es un
-                        desafío, aprendizaje y transformación constante en el Ser y en el Hacer, en la habilidad de
-                        compartir, acompañar y guiar a otros en el proceso de <span
-                            class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">expansión de consciencia
-                            <i class="fas fa-brain ml-2 text-2xl"></i></span> y en los aspectos que nos hacen crecer,
-                        recordando que todos somos <span
-                            class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Uno<i
-                                class="fas fa-globe-americas ml-2 text-2xl"></i></span>
-                        <br><br>
-                        Mi enfoque se centra en ayudarte a reconectar con tu potencial interior, fortalezas y
-                        creatividad. Explorándote a través de <span
-                            class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">herramientas prácticas
-                            para
-                            el autoconocimiento</span> de ayer, hoy y mañana,
-                        permitiendo descubrir una versión mas esencial de vos mismo/a y un bienestar <span
-                            class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">integral <i
-                                class="fas fa-spa ml-2 text-2xl"></i></span>
-                        <br><br>
-                        <span class="text-[#FEEDAA] font-bold text-xl inline-flex items-center">Crear Armonía en la Vida
-                        </span> es un objetivo valioso y necesario en estos
-                        tiempos.
+                    <p class="mb-8 text-center lg:text-lg font-arimo font-bold">
+                        Mi enfoque se centra en <span class="text-[#613659]">GUIARTE y ACOMAÑARTE</span> en el proceso
+                        de re-conectar con tu potencial interior, tus fortalezas y la creatividad que ya eres.
+                        Fomentando primordialmente el desarrollo de la <span class="text-[#613659]">CONSCIENCIA</span>
+                        del cuerpo, integrando los aspectos mentales, energéticos, emocionales y espirituales.
                     </p>
 
-                    <h2
-                        class="text-3xl mb-5 p-2 text-center font-simonetta text-[#843179] bg-[#FEEDAA] font-bold rounded-xl">
-                        ¡Unite con Nosotros!
-                    </h2>
+                    <p class="mb-8 text-center lg:text-lg font-arimo font-bold">
+                        En cada encuentro te invito a explorarte, <span class="text-[#613659]">HABITARTE</span> y
+                        expandirte a través de herramientas para el <span class="text-[#613659]">AUTOCONOCIMIENTO</span>
+                        y recursos expresivos terapéuticos, creando un espacio confiable y disponible para la <span
+                            class="text-[#613659]">ESCUCHA</span>, la introspección, inquietudes y reflexión,
+                        permitiendo descubrir una versión más <span class="text-[#613659]">ESCENCIAL</span> de vos mism@
+                        y/o una nueva mirada de alguna circunstancia y experiencia.
+                    </p>
 
-                    <div class="text-center text-center lg:text-lg font-arimo text-white font-bold">
-                        <p class="mb-6">
-                            Somos un espacio colaborativo para quienes compartimos el camino en diferentes momentos y
-                            formas, acompañándonos mutuamente en nuestro proceso de crecimiento y bienestar.
-                        </p>
+                    <img src="./media/home2.jpg" alt="jessi carmona foto" class="w-full h-auto mb-8">
 
-                        <h3 class="mb-3">
-                            Aqui recibirás informacion sobre:
-                        </h3>
+                    <p class="mb-3 text-center lg:text-lg font-arimo font-bold">
+                        Mi vivencia y desempeño como Acompañante Terapéutica, Meditadora, Profesora de Yoga y Mujer
+                        Danzante,
+                        ha sido el puente para abrir los caminos hacia mi propio <span class="text-[#613659]">DESARROLLO PERSONAL, ESPIRITUAL y CREATIVO</span>. Siendo un desafío, aprendizaje y transformación constante en el <span class="text-[#613659]">SER</span> y en el <span class="text-[#613659]">HACER</span>, en
+                        la habilidad de compartir, acompañar y guiar a otr@s en sus procesos de toma de consciencia,
+                        sanacion y en los aspectos que nos hacen crecer como seres human@s, recordando que todos somos
+                        <span class="text-[#613659]">UNO</span>.
+                    </p>
 
-                        <ul class="text-[#FEEDAA] mb-4 font-extrabold">
-                            <li>
-                                Encuentros grupales
-                            </li>
+                    <a href=""
+                        class="inline-block rounded-lg bg-[#613659] text-white py-2 px-5 font-extrabold tracking-wider uppercase my-4 font-simonetta">UNIRME
+                        A LA COMUNIDAD</a>
 
-                            <li>
-                                Sesiones individuales
-                            </li>
+                    <p class="mb-3 text-center lg:text-lg font-arimo font-bold">
+                        Un espacio colaborativo destinado a quienes vamos compartiendo el camino en diferentes tiempos,
+                        momentos y formas.
+                        Sucribite al NEWSLETTER para recibir informacion sobre:
 
-                            <li>
-                                Reflexiones
-                            </li>
+                        Clases, talleres, encuentros grupales, retiros
 
-                            <li>
-                                Novedades
-                            </li>
+                        Sesiones Individuales
 
-                            <li>
-                                Actividades Gratuitas
-                            </li>
+                        Aportes y reflexiones
 
-                            <li>
-                                ¡Y mucho más!
-                            </li>
-                        </ul>
-
-                        <p>
-                            Además, promovemos Viajes Culturales a India enmarcados en nuestro proyecto de exploración y
-                            aprendizajes constantes.
-                            Suscribite aqui y forma parte.
-                        </p>
-                    </div>
+                        Novedades y mucho mas!
+                    </p>
 
                     <!-- Formulario del Newsletter -->
                     <form name="newsletter" method="POST" netlify
-                        class="w-full max-w-md mx-auto bg-white/80 rounded-2xl shadow p-6 flex flex-col gap-4 mt-6"
+                        class="w-full max-w-md mx-auto bg-[#f4e0a3] rounded-2xl shadow p-6 flex flex-col gap-4 mt-6"
                         autocomplete="off">
 
                         <input type="hidden" name="form-name" value="newsletter">
 
                         <input type="text" name="nombre" placeholder="Nombre" required autocomplete="name"
-                            class="px-4 py-2 rounded-lg border border-[#843179] focus:outline-none focus:ring-2 focus:ring-[#2FAED5] font-arimo">
+                            class="px-4 py-2 rounded-lg border border-[#613659] focus:outline-none focus:ring-2 focus:ring-[#613659] font-arimo">
 
                         <input type="text" name="pais_ciudad" placeholder="País / Ciudad" required
                             autocomplete="address-level2"
-                            class="px-4 py-2 rounded-lg border border-[#843179] focus:outline-none focus:ring-2 focus:ring-[#2FAED5] font-arimo">
+                            class="px-4 py-2 rounded-lg border border-[#613659] focus:outline-none focus:ring-2 focus:ring-[#613659] font-arimo">
 
                         <input type="email" name="email" placeholder="Email" required autocomplete="email"
-                            class="px-4 py-2 rounded-lg border border-[#843179] focus:outline-none focus:ring-2 focus:ring-[#2FAED5] font-arimo">
+                            class="px-4 py-2 rounded-lg border border-[#613659] focus:outline-none focus:ring-2 focus:ring-[#613659] font-arimo">
 
                         <button type="submit"
-                            class="bg-[#2FAED5] text-white font-bold py-2 rounded-lg transition hover:bg-[#1992b3] font-arimo cursor-pointer">Suscribirme</button>
+                            class="bg-[#613659] text-white font-bold py-2 transition font-arimo cursor-pointer">Suscribirme</button>
                     </form>
 
                 </div>
@@ -229,7 +185,7 @@
 
             </main>
 
-            <footer class="text-center py-2 border-2 border-[#2FAED5] rounded-xl bg-white">
+            <footer class="text-center py-2 border-2 border-[#f4e0a3] rounded-xl bg-white">
                 <p class="font-semibold font-simonetta text-[#495551] rounded-xl">
                     Copyright &#169; Jessi Carmona (2025) | Fotografías Diego Lapiz |
                     Desarrollado por <a href="https://pablomgdev.netlify.app/" target="_blank" rel="noopener noreferrer"
