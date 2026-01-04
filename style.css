@@ -4,7 +4,7 @@
 .hamburger-bar {
     width: 30px;
     height: 4px;
-    background-color: #f4e0a3;
+    background-color:#613659;
     margin: 5px 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
