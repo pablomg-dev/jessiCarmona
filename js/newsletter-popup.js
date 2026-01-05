@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.querySelector('form[name="newsletter"]');
   if (!form) return;
-  // Crear popup oculto
+
   const popup = document.createElement('div');
   popup.innerHTML = `<div class="fixed inset-0 flex items-center justify-center z-50 bg-black/40">
       <div class="bg-white rounded-2xl shadow-lg p-8 max-w-xs text-center font-arimo">
