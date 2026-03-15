@@ -1,0 +1,4 @@
+/servicios/*    /pages/servicios/:splat    200
+/consultoria/*  /pages/consultoria/:splat  200
+/contactame/*   /pages/contactame/:splat    200
+/conoceme/*     /pages/conoceme/:splat      200
