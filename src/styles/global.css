@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Simonetta&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #613659;
+  --color-cream: #f4e0a3;
+  --color-brand-light: #843179;
+  --color-text: #495551;
+  
+  --font-simonetta: 'Simonetta', serif;
+  --font-arimo: 'Arimo', sans-serif;
+}
+
+.hamburger-bar {
+  width: 30px;
+  height: 4px;
+  background-color: #613659;
+  margin: 5px 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#menu-button.open .top {
+  transform: translateY(9px) rotate(45deg);
+}
+
+#menu-button.open .middle {
+  opacity: 0;
+}
+
+#menu-button.open .bottom {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+.font-simonetta {
+  font-family: 'Simonetta', serif;
+}
+
+.font-arimo {
+  font-family: 'Arimo', sans-serif;
+}

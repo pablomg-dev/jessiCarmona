@@ -1,0 +1,99 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+
+const currentPath = Astro.url.pathname;
+---
+
+<Layout 
+  title="Soy Jessi Carmona | Inicio - CreAndo Armonia Comunidad"
+  description="Espacio de ayuda y acompañamiento integral brindando propuestas para el crecimiento personal, sanación y bienestar con Jessi Carmona."
+>
+  <div class="relative min-h-screen grid grid-rows-[auto_1fr_auto]">
+    <div class="relative z-10 min-h-screen flex flex-col">
+      <Header currentPath={currentPath} />
+      
+      <br>
+
+      <main class="p-3 pt-0 md:px-20 lg:px-32 xl:px-44">
+        <div class="relative mx-auto lg:w-2/3 mb-5 overflow-hidden">
+          <div class="bg-[#f4e0a3] px-4 py-5 font-simonetta">
+            <div class="w-12 h-1.5 bg-[#613659] mb-3" aria-hidden="true"></div>
+            <h1 class="text-lg sm:text-xl md:text-2xl font-bold">UN ESPACIO PARA VOLVER A VOS</h1>
+            <h2 class="text-lg sm:text-xl md:text-2xl font-bold">RECONECTAR CON TU POTENCIAL INTERIOR</h2>
+            <h3 class="text-lg sm:text-xl md:text-2xl font-bold">Y VIVIR ALINEAD@ CON TU VERDAD</h3>
+            <p class="text-lg sm:text-xl md:text-2xl font-bold">Comunidad CreANDO Armonía</p>
+            <a href="/pages/servicios"
+              class="inline-block rounded-lg bg-[#613659] text-white py-2 px-5 font-extrabold tracking-wider uppercase mt-4">
+              QUIERO UNIRME
+            </a>
+          </div>
+
+          <img src="/media/home1.jpg" alt="jessi carmona foto" class="w-full h-auto rounded-lg">
+        </div>
+
+        <div class="flex flex-col items-center justify-center">
+          <h2 class="text-xl text-[#613659] mb-3 p-2 pt-0 text-center font-simonetta font-bold rounded-xl">
+            ​¿QUÉ TENGO PARA OFRECERTE?
+          </h2>
+
+          <p class="mb-8 text-center lg:text-lg font-arimo font-bold">
+            Mi enfoque se centra en <span class="text-[#613659]">GUIARTE</span> y <span
+              class="text-[#613659]">ACOMPAÑARTE</span> en el proceso
+            de re-conectar con el potencial interior, fortalezas y creatividad para generar nuevas
+            respuestas
+            en la vida.
+            Fomentando primordialmente el desarrollo de la <span class="text-[#613659]">CONSCIENCIA</span>
+            del cuerpo, integrando aspectos más sutiles como el mental, energético y espiritual.
+          </p>
+
+          <p class="mb-8 text-center lg:text-lg font-arimo font-bold">
+            En cada encuentro te invito a indagar, explorar y a <span
+              class="text-[#613659]">HABITARTE</span> a través de herramientas para el <span
+              class="text-[#613659]">AUTOCONOCIMIENTO</span>
+            y recursos expresivos terapéuticos, creando un espacio confiable y disponible para la <span
+              class="text-[#613659]">ESCUCHA</span>, la introspección, inquietudes y reflexión,
+            permitiendo descubrir una versión más <span class="text-[#613659]">ESENCIAL</span> de vos mism@
+            y/o una nueva mirada de alguna circunstancia o experiencia.
+          </p>
+
+          <img src="/media/home2.jpg" alt="jessi carmona foto"
+            class="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto h-auto mb-4 rounded-lg">
+
+          <a href="/pages/conoceme"
+            class="inline-block rounded-lg bg-[#613659] text-white p-2 font-extrabold tracking-wider uppercase mb-4 font-simonetta">
+            CONOCEME MÁS
+          </a>
+
+          <p class="mb-5 text-center lg:text-lg font-arimo font-bold">
+            Mi vivencia y desempeño como Acompañante Terapéutica, Meditadora, Profesora de Yoga y Mujer
+            Danzante,
+            ha sido el puente para abrir los caminos hacia mi propio <span class="text-[#613659]">DESARROLLO
+              PERSONAL, ESPIRITUAL y CREATIVO</span>. Siendo un desafío, aprendizaje y transformación
+            constante en el <span class="text-[#613659]">SER</span> y en el <span
+              class="text-[#613659]">HACER</span>, en
+            la habilidad de compartir, acompañar y guiar a otr@s en sus procesos de toma de consciencia,
+            sanación y en los aspectos que nos hacen crecer como seres human@s, recordando que tod@s somos
+            <span class="text-[#613659]">UNO</span>.
+          </p>
+
+          <h2 class="text-xl text-[#613659] mb-3 p-2 pt-0 text-center font-simonetta font-bold rounded-xl">
+            ¿QUE VAS A ENCONTRAR EN LA COMUNIDAD?</h2>
+
+          <p class="mb-3 text-center lg:text-lg font-arimo font-bold">
+            Un espacio colaborativo destinado a quienes vamos compartiendo el camino en diferentes tiempos,
+            momentos y formas.
+            Suscribite al <span class="text-[#613659]">NEWSLETTER</span> para recibir información sobre:
+            Clases, talleres grupales, retiros, sesiones individuales, reflexiones, novedades y ¡mucho mas!
+          </p>
+
+          <NewsletterForm />
+        </div>
+      </main>
+
+      <Footer />
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,69 @@
+---
+---
+
+<form 
+  id="contact-form" 
+  name="contacto" 
+  method="POST" 
+  data-netlify="true"
+  class="w-full max-w-md mx-auto bg-[#f4e0a3] rounded-2xl shadow p-6 flex flex-col gap-4 mt-0"
+  autocomplete="off"
+>
+  <input type="hidden" name="form-name" value="contacto" />
+
+  <p class="hidden">
+    <label>No llenes esto si eres humano: <input name="bot-field" /></label>
+  </p>
+
+  <input 
+    type="text" 
+    id="name" 
+    name="name" 
+    placeholder="Nombre" 
+    required 
+    autocomplete="name"
+    class="px-4 py-2 rounded-lg border border-[#613659] focus:outline-none focus:ring-2 focus:ring-[#613659] font-arimo"
+  >
+
+  <input 
+    type="tel" 
+    id="phone" 
+    name="phone" 
+    placeholder="Teléfono (opcional)"
+    class="px-4 py-2 rounded-lg border border-[#613659] focus:outline-none focus:ring-2 focus:ring-[#613659] font-arimo"
+  >
+
+  <input 
+    type="email" 
+    id="email" 
+    name="email" 
+    placeholder="Email" 
+    required 
+    autocomplete="email"
+    class="px-4 py-2 rounded-lg border border-[#613659] focus:outline-none focus:ring-2 focus:ring-[#613659] font-arimo"
+  >
+
+  <textarea 
+    id="message" 
+    name="message" 
+    rows="5" 
+    placeholder="Tu consulta" 
+    required
+    class="px-4 py-2 rounded-lg border border-[#613659] focus:outline-none focus:ring-2 focus:ring-[#613659] font-arimo"
+  ></textarea>
+
+  <div class="text-center">
+    <button 
+      type="submit"
+      class="bg-[#613659] text-white font-bold py-2 transition font-arimo cursor-pointer rounded-lg px-6 hover:opacity-90"
+    >
+      Enviar
+    </button>
+  </div>
+
+  <p id="form-status" class="text-xs text-center text-[#613659] mt-2"></p>
+</form>
+
+<script>
+  import "../scripts/contact-form";
+</script>

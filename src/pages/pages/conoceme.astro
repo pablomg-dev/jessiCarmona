@@ -1,0 +1,86 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const currentPath = Astro.url.pathname;
+---
+
+<Layout 
+  title="Soy Jessi Carmona | Sobre Mí - CreAndo Armonia Comunidad"
+  description="Conoce a Jessi Carmona, profesional de la salud, acompañante terapéutica y facilitadora en arteterapia."
+>
+  <div class="relative min-h-screen grid grid-rows-[auto_1fr_auto]">
+    <div class="relative z-10 flex flex-col min-h-screen">
+      <Header currentPath={currentPath} />
+      
+      <br>
+
+      <main class="font-arimo px-3 md:px-20 lg:px-32 xl:px-44">
+        <h1 class="font-simonetta text-[#843179] bg-[#FEEDAA] text-3xl p-2 font-bold text-center mb-3 rounded-xl">
+          Sobre Mi
+        </h1>
+
+        <img src="/media/sobremi1.jpg" alt="jessi carmona foto" class="mx-auto lg:w-2/3 rounded-lg mb-3">
+
+        <section class="text-justify lg:text-lg font-bold">
+          <p class="list-disc marker:text-[#FEEDAA] pl-6 mb-10 text-center">
+            JESSICA MARIA CARMONA
+            <br>
+            Profesional de la Salud en Acompañamiento Terapéutico Interdisciplinario y Arteterapia
+            <br>
+            Especializada en Psicogenealogía & Transgeneracional
+            <br>
+            Instructora de Yoga & Meditación
+          </p>
+
+          <p class="mb-6 hyphens-auto">Resumir mi autobiografía no me ha resultado una tarea fácil, ya que me
+            considero una <span class="text-[#613659] font-bold">MUJER</span> completa, con una vida llena
+            de experiencias, aprendizajes, matices, viajes, búsquedas, ciclos, <span
+              class="text-[#613659] font-bold">CAMBIOS</span> y <span
+              class="text-[#613659] font-bold">RENOVACIONES</span>.</p>
+          <p class="mb-6 hyphens-auto">En la adolescencia, marcada por la curiosidad, cuestionamientos
+            constantes
+            y cierta rebeldía, comencé mi viaje de autoconocimiento y autodescubrimiento, brindándome
+            significativas oportunidades de <span class="text-[#613659] font-extrabold">CRECIMIENTO
+              EN
+              LA VIDA</span>.</p>
+          <p class="mb-6 hyphens-auto">El interés temprano por la <span
+              class="text-[#613659] font-bold">LECTURA, LA FILOSOFÍA, LA PSICOLOGÍA Y LAS ARTES
+              EXPRESIVAS</span> me llevó, a los 18 años de edad, a explorar, también a formarme y
+            desempeñarse por largos periodos de tiempo en diversos ámbitos de la <span
+              class="text-[#613659] font-bold">SALUD</span> psicofísica, <span
+              class="text-[#613659] font-bold">TERAPÉUTICOS</span> y de índole <span
+              class="text-[#613659] font-bold">ESPIRITUAL</span>.
+          </p>
+
+          <img src="/media/sobremi3.jpg" alt="jessi carmona foto"
+            class="mx-auto w-full md:w-2/3 lg:w-1/2 rounded-lg mb-3">
+
+          <p class="mb-6 hyphens-auto">Gracias a una lesión o desequilibrio físico que marca un antes y un
+            después en mi estilo y ritmo de vida, vuelvo a conectar con la inspiración de las <span
+              class="text-[#613659] font-bold">SABIDURÍAS Y ENSEÑANZAS MILENARIAS</span> de oriente,
+            profundizando más como estudiante y practicante en el budismo, yoga y la meditación; ofreciendo
+            nuevas perspectivas de ver el mundo, sobre mí misma y otras formas de vivir, sembrando en mi
+            interior semillas que con el tiempo han ido floreciendo.</p>
+
+          <p class="mb-6 hyphens-auto">En la actualidad me encuentro en una <span
+              class="text-[#613659] font-bold">INTEGRACIÓN</span> de mis procesos de toma de <span
+              class="text-[#613659] font-bold">CONSCIENCIA</span>, conocimientos, lecciones y vivencias.
+            Luego de venir transitando y compartiendo el <span
+              class="text-[#613659] font-bold">CAMINO</span> con otras personas desde hace más de 20 años,
+            estoy creando propuestas que pongo al servicio con devoción, amor y respeto, como así he
+            recibido de quienes me han guiado e inspirado en mi desarrollo personal.</p>
+          <p class="mb-6 hyphens-auto">Mi propósito es poder aportar desde la diversidad y la totalidad sin
+            identificarme , colaborar al <span class="text-[#613659] font-bold">EMPODERAMIENTO
+              PERSONAL</span>, la <span class="text-[#613659] font-bold">SANACIÓN</span> y la <span
+              class="text-[#613659] font-bold">TRANSFORMACIÓN</span> en quienes acompañe, con la certeza
+            que desde mi experiencia y visión sé que es posible.</p>
+        </section>
+        <br>
+      </main>
+
+      <Footer />
+    </div>
+  </div>
+</Layout>

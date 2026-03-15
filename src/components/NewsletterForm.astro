@@ -1,0 +1,50 @@
+---
+---
+
+<form 
+  name="newsletter" 
+  method="POST" 
+  netlify 
+  class="w-full max-w-md mx-auto bg-[#f4e0a3] rounded-2xl shadow p-6 flex flex-col gap-4 mt-6"
+  autocomplete="off"
+>
+  <input type="hidden" name="form-name" value="newsletter">
+
+  <input 
+    type="text" 
+    name="nombre" 
+    placeholder="Nombre" 
+    required 
+    autocomplete="name"
+    class="px-4 py-2 rounded-lg border border-[#613659] focus:outline-none focus:ring-2 focus:ring-[#613659] font-arimo"
+  >
+
+  <input 
+    type="text" 
+    name="pais_ciudad" 
+    placeholder="País / Ciudad" 
+    required 
+    autocomplete="address-level2"
+    class="px-4 py-2 rounded-lg border border-[#613659] focus:outline-none focus:ring-2 focus:ring-[#613659] font-arimo"
+  >
+
+  <input 
+    type="email" 
+    name="email" 
+    placeholder="Email" 
+    required 
+    autocomplete="email"
+    class="px-4 py-2 rounded-lg border border-[#613659] focus:outline-none focus:ring-2 focus:ring-[#613659] font-arimo"
+  >
+
+  <button 
+    type="submit"
+    class="bg-[#613659] text-white font-bold py-2 transition font-arimo cursor-pointer rounded-lg"
+  >
+    Suscribirme
+  </button>
+</form>
+
+<script>
+  import "../scripts/newsletter";
+</script>

@@ -1,0 +1,63 @@
+---
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+
+const navItems = [
+  { href: "/", label: "Inicio" },
+  { href: "/pages/servicios", label: "Servicios" },
+  { href: "/pages/consultoria", label: "Consultoría 1:1" },
+  { href: "/pages/conoceme", label: "Sobre Mi" },
+  { href: "/pages/contactame", label: "Contactame" },
+];
+
+const getHref = (href: string) => {
+  if (href === "/") return "/";
+  return href;
+};
+
+const isActive = (href: string) => {
+  if (href === "/") {
+    return currentPath === "/" || currentPath === "/index";
+  }
+  return currentPath.startsWith(href);
+};
+---
+
+<header class="font-simonetta">
+  <nav class="relative bg-white shadow-md border-2 border-[#f4e0a3] rounded-xl">
+    <div class="flex items-center justify-between px-4 md:flex-row w-full">
+      <a href="/" class="flex items-center">
+        <img src="/media/creandoLogo.png" alt="logo" class="w-20">
+      </a>
+
+      <button id="menu-button" aria-label="Abrir menú de navegación"
+        class="border border-[#613659] md:hidden p-2 border-2 rounded cursor-pointer focus:outline-none">
+        <div class="hamburger-bar top"></div>
+        <div class="hamburger-bar middle"></div>
+        <div class="hamburger-bar bottom"></div>
+      </button>
+
+      <div id="menu"
+        class="absolute z-20 top-full right-0 w-full text-xl lg:text-2xl md:relative md:flex md:items-center md:justify-end bg-white overflow-hidden max-h-0 transition-all duration-300 ease-in-out md:max-h-full md:w-auto md:top-0 md:static">
+        {navItems.map((item) => (
+          <a 
+            href={getHref(item.href)}
+            class:list={[
+              "block font-bold text-center p-2 menu-items hover:text-[#613659] md:px-4",
+              isActive(item.href) && "text-[#613659]"
+            ]}
+          >
+            {item.label}
+          </a>
+        ))}
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  import "../scripts/menu";
+</script>

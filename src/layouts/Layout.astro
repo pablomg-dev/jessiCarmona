@@ -1,0 +1,56 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  keywords?: string;
+  image?: string;
+  url?: string;
+}
+
+const { 
+  title, 
+  description, 
+  keywords = "terapias holísticas, sanación energética, crecimiento personal, psicología espiritual, sesiones online, meditación, bienestar emocional, Jessi Carmona",
+  image = "https://soyjessicarmona.com/media/consultoria1.jpeg",
+  url = "https://soyjessicarmona.com/"
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, url);
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href={canonicalURL}>
+  <title>{title}</title>
+  
+  <meta name="description" content={description}>
+  <meta name="keywords" content={keywords}>
+  
+  <link rel="shortcut icon" href="/media/favicon.ico" type="image/x-icon">
+  
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:image" content={image}>
+  <meta property="og:url" content={canonicalURL}>
+  <meta property="og:type" content="website">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={image}>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <slot />
+</body>
+</html>
+
+<style is:global>
+  @import "../styles/global.css";
+</style>
