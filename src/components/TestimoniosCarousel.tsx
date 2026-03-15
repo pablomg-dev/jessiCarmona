@@ -44,21 +44,19 @@ export default function TestimoniosCarousel() {
     return () => clearInterval(intervalo);
   }, []);
 
+  const testimonioActual = testimonios[indiceActual];
+
   return (
     <div className="relative rounded-2xl overflow-hidden border-2 border-[#f4e0a3] shadow-xl text-white text-center bg-[url('/media/carouselTestimonios2.jpg')] bg-center bg-no-repeat bg-cover min-h-[350px] sm:min-h-[400px] flex items-center justify-center px-2">
       <div className="relative w-full max-w-lg mx-auto px-6 md:px-12">
-        {testimonios.map((testimonio, indice) => (
-          <div
-            key={indice}
-            className={`testimonio-slide transition-opacity duration-500 flex flex-col justify-center py-8 ${
-              indice === indiceActual ? 'opacity-100' : 'opacity-0 absolute inset-0'
-            }`}
-          >
-            <p className="text-shadow-lg font-black italic text-base lg:text-xl">
-              "{testimonio.texto}"
-            </p>
-          </div>
-        ))}
+        <div
+          key={indiceActual}
+          className="testimonio-slide animate-fade-in flex flex-col justify-center py-8"
+        >
+          <p className="text-shadow-lg font-black italic text-base lg:text-xl">
+            "{testimonioActual.texto}"
+          </p>
+        </div>
       </div>
     </div>
   );
